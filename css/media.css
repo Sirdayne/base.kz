@@ -47,7 +47,7 @@
 
 @media only screen and (max-width : 750px) {
     /* header */
-    .settings-free{
+    .settings-free, .settings-free-personal-cabinet{
         display: none;
     }
     .post-rating{

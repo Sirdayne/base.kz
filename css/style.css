@@ -62,6 +62,11 @@ header a, #settings a{
     width: 181px;
     height: 50px;
 }
+.settings-free-personal-cabinet{
+    float: left;
+    width: 151px;
+    height: 50px;
+}
 .settings-nav{
     float: left;
     margin-top: 40px;
