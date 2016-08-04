@@ -50,9 +50,12 @@ header a, #settings a{
 }
 .settings-inner{
     float: left;
-    max-width: 1600px;
     width: 95%;
     margin-left: 5%;
+}
+.settings-inner-inside{
+    float: left;
+    width: 100%;
 }
 .settings-free{
     float: left;
@@ -72,6 +75,13 @@ header a, #settings a{
     border-radius: 100% 0 0 100%;
     background: #c2c2c2;
 }
+.settings-nav-arrow{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 100% 100% 0;
+    background: #c2c2c2;
+}
 .nav-active a{
     color: #2b2a2a;
 }
@@ -81,6 +91,7 @@ header a, #settings a{
 .wrapper{
     float: left;
     width: 90%;
+    max-width: 1600px;
     margin-left: 5%;
     
     /*
@@ -121,6 +132,12 @@ header a, #settings a{
 .add-post-text p{
     margin-top: 12px;
     margin-left: 10px;
+}
+.wrapper-grey{
+    float: right;
+    width: 67%;
+    height: 50px;
+    background: #ebebeb;
 }
 
 .posts{
@@ -308,11 +325,129 @@ header a, #settings a{
 
 
 
+/* inside-post */
+#add-commentary{
+    float: left;
+    width: 100%;
+    border-top: 2px solid #c2c2c2;
+    border-bottom: 2px solid #c2c2c2;
+}
+.add-commentary{
+    float: left;
+    width: 46%;
+    margin-left: 27%;
+}
+.add-commentary-number{
+    float: left;
+    text-transform: uppercase;
+    color: #2b2a2a;
+    height: 100px;
+}
+.add-commentary-number p{
+    margin-top: 40px;
+}
+.add-commentary-button{
+    float: right;
+    color: #f2b44a;
+    margin-top: 30px;
+    padding:  5px 25px 5px 25px;
+    border: 2px solid #f2b44a;
+    border-radius: 25px;
+    cursor: pointer;
+}
 
 
 
+/* personal-cabinet */
+.wrapper-personal{
+    float: left;
+    width: 95%;
+    max-width: 1600px;
+    margin-left: 5%;
+    
+    /*
+    
+    border-color: #c2c2c2;
+    
+    color: #2b2a2a;
+    
+    */
+    
+    color: #766f6f;
+}
+.personal-cabinet{
+    color: #2b2a2a;
+    background: #ebebeb; 
+}
+#personal-cabinet{
+    float: left;
+    width: 33%;
+    min-width: 200px;
+}
 
-
+#personal-cabinet-settings{
+    float: left;
+    width: 67%;
+    background: #ebebeb; 
+    height: 1600px;
+}
+.personal-photo{
+    float: left;
+    width: 100%;
+    color: #2b2a2a;
+    text-align: center;
+}
+.personal-nickname{
+    float: left;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+.personal-rating, .personal-subs{
+    float: left;
+    width: 49%;
+}
+.personal-rating span, .personal-subs span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.personal-border-line{
+    float: left;
+    width: 2px;
+    height: 40px;
+    background: #2b2a2a;
+}
+.personal-info{
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    color: #2b2a2a;
+}
+.personal-line{
+    float: left;
+    height: 2px;
+    width: 100%;
+    margin-left: -5%;
+    margin-top: 35px;
+    background: #c2c2c2;
+}
+.personal-menu{
+    float: left;
+    width: 100%;
+    margin-top: 35px;
+    color: #2b2a2a;
+}
+.personal-menu-nav:hover{
+    cursor: pointer;
+    color: #f2b44a;
+}
+.personal-menu-nav img{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
 
 /* FOOTER */
 footer{
@@ -346,10 +481,9 @@ footer a{
 .footer-nav-title{
     position: absolute;
     width: 100px;
-    
     left: -80px;
-
     margin-top: 40px;
+    font-weight: 600;
     transform: rotate(-90deg);
     text-align: right;
 }
