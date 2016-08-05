@@ -9,7 +9,7 @@ header a, #settings a{
 }
 .header-navigation{
     float: left;
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     width: 90%;
     margin: 40px;
     margin-left: 5%;
@@ -79,6 +79,12 @@ header a, #settings a{
     height: 100px;
     border-radius: 100% 0 0 100%;
     background: #c2c2c2;
+    position: relative;
+}
+.settings-nav-search img{
+    position: absolute;
+    top: 35px;
+    left: 35px;
 }
 .settings-nav-arrow{
     float: left;
@@ -86,6 +92,10 @@ header a, #settings a{
     height: 100px;
     border-radius: 0 100% 100% 0;
     background: #c2c2c2;
+}
+.settings-nav-arrow img{
+    margin-top: 25px;
+    margin-left: 25px;
 }
 .nav-active a{
     color: #2b2a2a;
@@ -96,7 +106,7 @@ header a, #settings a{
 .wrapper{
     float: left;
     width: 90%;
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     margin-left: 5%;
     
     /*
@@ -170,11 +180,19 @@ header a, #settings a{
 .rating-number{
     width: 20px;
     margin-top: 40px;
+    -webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 .rating-checkbox{
     width: 20px;
     margin-top: 40px;
+    -webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
@@ -328,19 +346,26 @@ header a, #settings a{
 }
 
 
-
-
 /* inside-post */
-#add-commentary{
+#add-commentary-border{
+    margin-top: 75px;
     float: left;
     width: 100%;
     border-top: 2px solid #c2c2c2;
     border-bottom: 2px solid #c2c2c2;
 }
+#add-commentary{
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+}
 .add-commentary{
     float: left;
-    width: 46%;
-    margin-left: 27%;
+    width: 70%;
+    margin-left: 15%;
+}
+.add-commentary-margin{
+    margin-left: 110px;
 }
 .add-commentary-number{
     float: left;
@@ -363,11 +388,162 @@ header a, #settings a{
 
 
 
+
+#comments{
+    margin-top: 75px;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    color: #766f6f;
+}
+.comments{
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+}
+.comment-main{
+    margin-left: 10px;
+    float: left;
+    width: 90%;
+}
+.comment-rating{
+    float: left;
+    width: 100px;
+}
+.comment-rating span{
+    float: left;
+}
+.comment-rating-like img, .comment-rating-dislike img{
+    float: left;
+    width: 20px;
+    cursor: pointer;
+    margin: 5px 0 0 7px;
+}
+.comment{
+    float: left;
+    width: 80%;
+}
+.comment-row, .comment-send, .comment-text{
+    float: left;
+    width: 100%;
+}
+.comment-nickname{
+    float: left;
+    color: #2b2a2a;
+}
+.comment-time{
+    float: left;
+    margin-left: 25px;
+}
+.comment-text{
+    margin-top: 25px;
+}
+.comment-send{
+    margin-top: 25px;
+    text-decoration: underline;
+    color: #f2b44a;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.comment-spoiler{
+    float: left;
+    width: 20px;
+}
+.comment-spoiler-border{
+    float: left;
+    margin-top: 3px;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #c2c2c2;
+    border-radius: 100%;
+    color: #c2c2c2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.comment-spoiler-line{
+    float: left;
+    margin-top: 10px;
+    margin-left: 6px;
+    height: 400px;
+    width: 2px;
+    background: #c2c2c2;
+}
+
+
+#your-comment{
+    margin-top: 75px;
+    margin-bottom: 175px;
+    float: left;
+    width: 100%;
+    margin-left: 5%;
+    color: #766f6f;
+}
+.your-comment{
+    float: left;
+    width: 100%;
+    margin-left: 15%;
+}
+.your-comment-main{
+    margin-left: 110px;
+    float: left;
+    width: 100%;
+}
+.your-comment-row{
+    float: left;
+    width: 80%;
+    margin-top: 30px;
+}
+.your-comment-row h1{
+    color: #2b2a2a;
+    text-align: left;
+    font-size: 20px;
+}
+.your-comment-row input{
+    float: left;
+    color: #766f6f;
+    font-size: 18px;
+    border: none;
+    margin-right: 10%;
+    font-family: "Asylbek Mereke 09+Handel", Helvetica, sans-serif;
+    width: 100%;
+}
+.your-comment-input,.your-commentary,.your-commentary-button{
+    float: left;
+    border-bottom: 2px solid #c2c2c2;
+}
+.your-comment-input{
+    width: 30%;
+    margin-right: 35px;
+}
+.your-commentary{
+    margin-top: 10px;
+    width: 40%;
+    margin-right: 35px;
+}
+.your-commentary-button{
+    width: 20%;
+    color: #f2b44a;
+    border: 2px solid #f2b44a;
+    border-radius: 25px;
+    text-align: center;
+    height: 30px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 /* personal-cabinet */
 .wrapper-personal{
     float: left;
     width: 95%;
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     margin-left: 5%;
     
     /*
@@ -401,6 +577,28 @@ header a, #settings a{
     width: 100%;
     color: #2b2a2a;
     text-align: center;
+}
+.personal-photo-avatar{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+}
+.personal-photo-avatar img{
+    position: absolute;
+    width: inherit;
+    
+    bottom: 0;
+    left: 0;
+}
+.personal-change-photo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 50px;
+    background: #f2b44a;
+    cursor: pointer;
 }
 .personal-nickname{
     float: left;
@@ -469,7 +667,7 @@ footer a{
 }
 .footer-navigation{
     float: left;
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     width: 90%;
     margin-left: 5%;
 }
@@ -489,6 +687,10 @@ footer a{
     left: -80px;
     margin-top: 40px;
     font-weight: 600;
+    -webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
     transform: rotate(-90deg);
     text-align: right;
 }
