@@ -75,14 +75,14 @@ header a, #settings a{
 }
 .settings-free-personal-cabinet{
     float: left;
-    width: 151px;
+    width: 165px;
     height: 50px;
 }
 .settings-nav{
     float: left;
     margin-top: 40px;
-    width: 200px;
     height: 60px;
+    margin-right: 40px;
 }
 .settings-nav a:hover{
     color: #2b2a2a !important;
@@ -159,8 +159,8 @@ header a, #settings a{
     margin-top: 30px;
     margin-left: 25px;
 }
-.nav-active a{
-    color: #2b2a2a;
+.nav-activa, .nav-active a{
+    color: #2b2a2a !important;
 }
 
 
@@ -700,12 +700,306 @@ header a, #settings a{
     min-width: 200px;
 }
 
+
+
+
 #personal-cabinet-settings{
     float: left;
     width: 67%;
     background: #ebebeb; 
-    height: 1600px;
+    min-height: 1600px;
 }
+/* ~~~~~ НАСТРОЙКИ ~~~~~*/
+#private-settings{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+.private-settings{
+    float: left;
+    width: 100%;
+}
+.private-settings input{
+    float: left;
+    color: #766f6f;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-right: 10%;
+    font-family: "Asylbek Mereke 09+Handel", Helvetica, sans-serif;
+    border-bottom: 2px solid #c2c2c2;
+    background: #ebebeb;
+    width: 40%;
+}
+.private-settings-gender{
+    margin-top: 50px;
+}
+.private-settings-button{
+    float: left;
+    color: #2b2a2a;
+    margin-top: 50px;
+    padding: 10px 75px 10px 75px;
+    border-radius: 25px;
+    border: 2px solid #2b2a2a;
+    cursor: pointer;
+}
+.private-settings-options{
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+.private-settings-option, .private-settings-toggle{
+    float: left;
+    height: 25px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+.private-settings-option{
+    width: 65%;
+}
+.private-settings-toggle{
+    width: 30%;
+}
+
+
+.private-password{
+    float: left;
+    width: 100%;
+    margin-top: 75px;
+}
+.private-password p{
+    font-size: 22px;
+    color: #2b2a2a;
+    margin-bottom: 25px;
+}
+.private-password input{
+    float: left;
+    color: #766f6f;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-right: 10%;
+    font-family: "Asylbek Mereke 09+Handel", Helvetica, sans-serif;
+    border-bottom: 2px solid #c2c2c2;
+    background: #ebebeb;
+    width: 40%;
+}
+.private-password-button{
+    float: left;
+    color: #2b2a2a;
+    margin-top: 50px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    border: 2px solid #2b2a2a;
+    cursor: pointer;
+}
+
+
+.private-logout{
+    float: left;
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+.private-logout p{
+    font-size: 22px;
+    color: #2b2a2a;
+    margin-bottom: 25px;
+}
+.private-logout-button{
+    float: left;
+    color: #2b2a2a;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    border: 2px solid #2b2a2a;
+    cursor: pointer;
+}
+
+.private-nav-part{
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 75px;
+}
+.private-margin a{
+    color: #766f6f
+}
+.private-margin:hover a{
+    color: #f2b44a;
+}
+.private-nav-part p{
+    font-size: 22px;
+    color: #2b2a2a;
+    margin-bottom: 25px;
+}
+
+
+/* ~~~~~ ПОСТЫ ~~~~~*/
+#private-posts{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+.private-posts-title{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+/* ~~~~~ КОММЕНТАРИИ ~~~~~*/
+#private-comments{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+.private-comments{
+    float: left;
+    width: 100%;
+}
+.private-comments input{
+    float: left;
+    color: #766f6f;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-right: 10%;
+    font-family: "Asylbek Mereke 09+Handel", Helvetica, sans-serif;
+    border-bottom: 2px solid #c2c2c2;
+    background: #ebebeb;
+    width: 80%;
+}
+.private-comments-search{
+    float: left;
+    color: #2b2a2a;
+    margin-top: 50px;
+    padding: 10px 45px 10px 45px;
+    border-radius: 25px;
+    border: 2px solid #2b2a2a;
+    cursor: pointer;
+}
+
+/* ~~~~~ СООБЩЕНИЯ ~~~~~*/
+#private-messages{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+.private-messages{
+    float: left;
+    width: 100%;
+}
+.private-messages input{
+    float: left;
+    color: #766f6f;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-right: 10%;
+    font-family: "Asylbek Mereke 09+Handel", Helvetica, sans-serif;
+    width: 100%;
+    border-bottom: 2px solid #c2c2c2;
+    background: #ebebeb;
+    width: 80%;
+}
+.private-messages-search{
+    float: left;
+    color: #2b2a2a;
+    margin-top: 50px;
+    padding: 10px 45px 10px 45px;
+    border-radius: 25px;
+    border: 2px solid #2b2a2a;
+    cursor: pointer;
+}
+
+/* ~~~~~~ ЗАМЕТКИ ~~~~~~ */
+#private-notes{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+.private-notes{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+/* ~~~~~~ ИГНОР ЛИСТ ~~~~~~ */
+#private-ignore{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+.private-ignore{
+    float: left;
+    width: 100%;
+    color: #2b2a2a;
+}
+.private-ignored-users{
+    float: left;
+    width: 100%;
+    height: 300px;
+}
+.private-ignored-tags{
+    float: left;
+    width: 100%;
+    height: 300px;
+}
+
+/* ~~~~~~ СОХРАНЕННОЕ ~~~~~~ */
+#private-saved{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+.private-saved{
+    float: left;
+    width: 100%;
+}
+
+.private-saved-number{
+    margin-top: 100px;
+    color: #2b2a2a;
+    margin-bottom: 25px;
+}    
+.private-saved-number span{
+    margin-left: 250px;
+}
+.add-category{
+    float: left;
+    height: 50px;
+    width: 50px;
+
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    background: #f2b44a;
+    cursor: pointer;
+}
+.add-category img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.add-category-text{
+    float: left;
+    color: #f2b44a;
+    cursor: pointer;
+    display: none;
+}
+.add-category-text p{
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.add-category:hover + .add-category-text{
+    display: block;
+}
+
 .personal-photo{
     float: left;
     width: 100%;
@@ -742,6 +1036,16 @@ header a, #settings a{
     width: 27px;
     background: #f2b44a;
     cursor: pointer;
+}
+.personal-change-photo-text{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    color: #f2b44a;
+    display: none;
+}
+.personal-change-photo:hover + .personal-change-photo-text{
+    display: block;
 }
 .personal-nickname{
     float: left;
@@ -784,16 +1088,48 @@ header a, #settings a{
     margin-top: 35px;
     color: #2b2a2a;
 }
+.personal-menu-nav{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.personal-menu a{
+    color: #2b2a2a;
+}
 .personal-menu-nav:hover{
     cursor: pointer;
     color: #f2b44a;
 }
 .personal-menu-nav img{
-    height: 15px;
-    width: 15px;
-    margin-right: 10px;
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
     margin-top: 15px;
 }
+.personal-menu-nav p{
+    margin-top: 15px;
+}
+.personal-menu-nav-hover{
+    position: absolute;
+    float: left;
+    height: 25px;
+    width: 25px;
+    top: 12px;
+    left: -3px;
+    border-radius: 100%;
+    background: #f2b44a;
+    display: none;
+}
+.personal-menu-nav-hover img{
+    margin-left: 2.2px;
+    margin-top: 2.5px;
+}
+
+.personal-menu-nav:hover .personal-menu-nav-hover{
+   display: block;
+}
+
 
 /* FOOTER */
 footer{
@@ -855,12 +1191,11 @@ footer a{
 }
 .footer-nav-text{
     float: left;
-    margin-top: 3px;
+    margin-top: 2px;
     margin-left: 5px;
 }
 .footer-nav-social{
     float: left;
-    background: #fff;
     width: 25px;
     height: 25px;
     border-radius: 100%;
@@ -886,4 +1221,9 @@ footer a{
 }
 .footer-nav-float:hover  .footer-nav-social {
     display: none;
+}
+
+.private-margin{
+    width: 100%;
+    margin-bottom: 15px;
 }

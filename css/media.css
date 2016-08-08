@@ -51,6 +51,16 @@
     .footer-navigation{
         margin-left: 15%;
     }
+    #personal-cabinet{
+        width: 100%;
+    }
+    #personal-cabinet-settings{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .wrapper-grey{
+        display: none;
+    }
     
 }
 
