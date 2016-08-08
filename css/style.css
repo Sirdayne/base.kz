@@ -32,16 +32,27 @@ header a, #settings a{
     height: 100px;
 }
 .header-nav p, .header-nav-private p{
-    margin-top: 35px;
+    margin-top: 30px;
 }
 .header-nav{
     float: left;
-    width: 100px;
+    margin-right: 15px;
+}
+.header-nav:hover a, .header-nav-private:hover a{
+    color: #2b2a2a;
 }
 .header-nav-private{
     float: right;
-    width: 180px;
 }
+.header-nav p, .header-nav-private p{
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid #fff;
+}
+.header-nav p:hover, .header-nav-private p:hover{
+    border: 2px solid #766f6f;
+}
+
 #settings{
     float: left;
     width: 100%;
@@ -73,18 +84,69 @@ header a, #settings a{
     width: 200px;
     height: 60px;
 }
+.settings-nav a:hover{
+    color: #2b2a2a !important;
+}
 .settings-nav-search{
     float: right;
+    position: relative;
     width: 100px;
     height: 100px;
-    border-radius: 100% 0 0 100%;
+    border-radius: 100px 0 0 100px;
     background: #c2c2c2;
-    position: relative;
+    transition: 0.5s ease-in;
+}
+.settings-nav-search input{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    width: 0px;
+    font-size: 20px;
+    font-family: "Asylbek Mereke 09+Handel", Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #766f6f;
+    background: #c2c2c2;
+    transition: 0.5s ease-in;
+    display: none;
+}
+.settings-nav-search:hover{
+    width: 500px;
+}
+.settings-nav-search:hover input{
+    width: 300px;
+    display: block;
 }
 .settings-nav-search img{
     position: absolute;
     top: 35px;
-    left: 35px;
+    right: 35px;
+    cursor: pointer;
+}
+.settings-nav-search img{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+}
+.settings-nav-search-hover{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: #f2b44a;
+    right: 25px;
+    top: 25px;
+    display: none;
+    transition: 1s linear;
+}
+.settings-nav-search-hover img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.settings-nav-search-normal:hover .settings-nav-search-hover{
+    display: block;
 }
 .settings-nav-arrow{
     float: left;
@@ -94,7 +156,7 @@ header a, #settings a{
     background: #c2c2c2;
 }
 .settings-nav-arrow img{
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 25px;
 }
 .nav-active a{
@@ -123,6 +185,7 @@ header a, #settings a{
 .wrapper-add{
     float: left;
     width: 100%;
+    position: relative;
 }
 .add-post{
     float: left;
@@ -143,10 +206,56 @@ header a, #settings a{
     float: left;
     color: #f2b44a;
     cursor: pointer;
+    display: none;
 }
 .add-post-text p{
     margin-top: 12px;
     margin-left: 10px;
+}
+.add-post:hover + .add-post-text{
+    display: block;
+}
+.wrapper-add-social{
+    position: absolute;
+    top: 400px;
+    
+    width: 50px;
+    height: 200px;
+    background: #ebebeb;
+}
+.wrapper-add-social-inside{
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #ebebeb;
+}
+.wrapper-add-social-inside:hover >img{
+    display: none;
+}
+.wrapper-add-social-inside-hover{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background: #f2b44a;
+    display: none;
+}
+.wrapper-add-social-inside-hover span{
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+.wrapper-add-social-inside:hover .wrapper-add-social-inside-hover{
+    display: block;
+}
+.wrapper-add-social img{
+    float: left;
+    width: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 .wrapper-grey{
     float: right;
@@ -170,12 +279,30 @@ header a, #settings a{
     width: 70px;
     height: 500px;
 }
+.rating-like, .rating-dislike{
+    height: 25px;
+}
+.rating-like-hover, .rating-dislike-hover{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #f2b44a;
+    display: none;
+    cursor: pointer;
+}
 .rating-like img, .rating-dislike img{
     width: 20px;
+    margin-left: 2px;
     cursor: pointer;
 }
 .rating-dislike{
-    margin-top: 10px;
+    margin-top: 15px;
+}
+.rating-like:hover .rating-like-hover, .rating-dislike:hover .rating-dislike-hover{
+    display: block;
+}
+.rating-like:hover .rating-like-hide img, .rating-dislike:hover .rating-dislike-hide img{
+    display: none;
 }
 .rating-number{
     width: 20px;
@@ -283,6 +410,7 @@ header a, #settings a{
     color: #918c8c;
     background: #e1e1e1;
     border-radius: 15px;
+    cursor: pointer;
     
 }
 .tag-commentaries, .tag-activity{
@@ -290,6 +418,7 @@ header a, #settings a{
     margin-right: 15px;
     text-decoration: underline;
     color: #766f6f;
+    cursor: pointer;
 }
 .post-content{
     float: left;
@@ -310,6 +439,9 @@ header a, #settings a{
 .post-more{
     float: left;
     width: 100%;
+}
+.post-more-button:hover+.post-more-text{
+    display: block;
 }
 .post-more-button{
     float: left;
@@ -339,6 +471,7 @@ header a, #settings a{
     color: #f2b44a;
     cursor: pointer;
     text-transform: lowercase;
+    display: none;
 }
 .post-more-text p{
     margin-top: 12px;
@@ -504,6 +637,7 @@ header a, #settings a{
     color: #766f6f;
     font-size: 18px;
     border: none;
+    outline: none;
     margin-right: 10%;
     font-family: "Asylbek Mereke 09+Handel", Helvetica, sans-serif;
     width: 100%;
@@ -597,6 +731,15 @@ header a, #settings a{
     left: 0;
     height: 40px;
     width: 50px;
+    background: #f2b44a;
+    cursor: pointer;
+}
+.personal-change-photo img{
+    position: absolute;
+    bottom: 9px;
+    left: 11px;
+    height: 21px;
+    width: 27px;
     background: #f2b44a;
     cursor: pointer;
 }
@@ -694,18 +837,53 @@ footer a{
     transform: rotate(-90deg);
     text-align: right;
 }
-.footer-nav img{
-    margin-top: 4px;
-    width: 17px;
-    height: 13px;
-}
 
+.footer-nav-float img{
+    height: 20px;
+    width: 20px;
+}
 .footer-nav-right{
     float: right;
+    width: 200px;
 }
-.footer-nav-section img{
-    margin-right: 15px;
+.footer-nav-float{
+    float: left;
+    width: 200px;
 }
 .footer-margin{
     margin-bottom: 15px;
+}
+.footer-nav-text{
+    float: left;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.footer-nav-social{
+    float: left;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+.footer-nav-social img{
+    margin-top: 3px;
+    margin-left: 2px;
+}
+.footer-nav-social-hover{
+    float: left;
+    background: #f2b44a;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: none;
+}
+.footer-nav-social-hover img{
+    margin-top: 3px;
+    margin-left: 2px;
+}
+.footer-nav-float:hover .footer-nav-social-hover{
+    display: block;
+}
+.footer-nav-float:hover  .footer-nav-social {
+    display: none;
 }
