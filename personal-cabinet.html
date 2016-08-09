@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-
+    <link rel="stylesheet" href="css/rangeslider.css">
 </head>
 
 <body>
@@ -173,37 +173,108 @@
                 
                     <input type="text" placeholder="ЛОГИН">
                     <input type="text" placeholder="E-MAIL">
-
+                    
+                    
+                    <select name="gender" class="private-settings-gender">
+                        <option selected value="t1" disabled><p>ВЫБЕРИТЕ ПОЛ</p></option>
+                        <option value="t2"><p>МУЖСКОЙ</p></option>
+                        <option value="t3"><p>ЖЕНСКИЙ</p></option>
+                    </select>
+                    <!--
                     <input type="text" placeholder="ВЫБЕРИТЕ ПОЛ" class="private-settings-gender">
+                    -->
                 </div>    
                 <div class="private-settings-button">сохранить изменения</div>
                 
                 
                 <div class="private-settings-options">
+                   
                     <div class="private-settings-option">ПОКАЗЫВАТЬ КОММЕНТАРИИ С РЕЙТИНГОМ ВЫШЕ -4</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <input type="range" min="0" max="1000" step="10" value="300" data-orientation="horizontal">
+                    </div>
+                    
                     <div class="private-settings-option">ПОКАЗЫВАТЬ ПОСТЫ С РЕЙТИНГОМ ВЫШЕ -15</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <input type="range" min="0" max="1000" step="10" value="0" data-orientation="horizontal">
+                    </div>
+                    
                     <div class="private-settings-option">КОЛИЧЕСТВО ПОСТОВ НА СТРАНИЦУ 20</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <input type="range" min="0" max="1000" step="10" value="0" data-orientation="horizontal">
+                    </div>
+                    
                     <div class="private-settings-option">РАСКРЫВАТЬ ПОСТЫ</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox" checked />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
+                    </div>
+                    
                     <div class="private-settings-option">ПОКАЗЫВАТЬ ПОЛНОСТЬЮ ДЛИННЫЕ ПОСТЫ</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox" />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
+                    </div>
+                    
                     <div class="private-settings-option">ОСТАНАВЛИВАТЬ GIF АНИМАЦИЮ В ПОСТАХ</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox" checked />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
+                    </div>
+                    
                     <div class="private-settings-option">ОСТАНАВЛИВАТЬ GIF АНИМАЦИЮ В КОММЕНТАРИЯХ</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox" checked />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
+                    </div>
+                    
                     <div class="private-settings-option">ПОКАЗЫВАТЬ МАТЕРИАЛЫ 16+</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox"  />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
+                    </div>
+                    
                     <div class="private-settings-option">АВТОМАТИЧЕСКИ СВОРАЧИВАТЬ ВЕТКИ В КОММЕНТАРИЯХ</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox"  />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
+                    </div>
+                    
                     <div class="private-settings-option">ПОКАЗЫВАТЬ ПОСТЫ С ТЕГОМ</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox"  />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
+                    </div>
+                    
                     <div class="private-settings-option">ПОКАЗЫВАТЬ ПОЛОСУ ПРОКРУТКИ НАВЕРХ</div>
-                    <div class="private-settings-toggle"></div>
+                    <div class="private-settings-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox" checked />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
+                    </div>
+                    
                     <div class="private-settings-option">ПОКАЗЫВАТЬ ПОХОЖИЕ ПОСТЫ</div>
-                    <div class="private-settings-toggle"></div>  
+                    <div class="private-settings-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox" checked />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
+                    </div>  
                 </div>
                 
                 
@@ -375,6 +446,27 @@
 	<script src="js/html5shiv-printshiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+<script>
+    $(function() {
 
+      var $element = $('input[type=range]');
+      var $output = $('output');
+
+      // Initialize rangeslider.js
+      $element.rangeslider({
+        polyfill: false
+      });
+
+      // Current value output
+      /*$output[0].innerHTML = $element[0].value;
+        $element.on('input', function() {
+        $output[0].innerHTML = this.value;*/
+      });
+
+</script>
+    
 </body>
 </html>
