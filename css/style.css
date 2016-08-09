@@ -68,6 +68,7 @@ header a, #settings a{
 }
 .settings-inner-inside{
     float: left;
+    position: relative;
     width: 100%;
 }
 .settings-free{
@@ -77,8 +78,13 @@ header a, #settings a{
 }
 .settings-free-personal-cabinet{
     float: left;
-    width: 165px;
+    width: 265px;/* 265px */
     height: 50px;
+}
+.settings-free-inside{
+    float: left;
+    width: 181px;
+    height: 100px;
 }
 .settings-nav{
     float: left;
@@ -151,21 +157,81 @@ header a, #settings a{
     display: block;
 }
 .settings-nav-arrow{
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100px;
     height: 100px;
-    border-radius: 0 100% 100% 0;
+    border-radius: 0 50% 50% 0;
     background: #c2c2c2;
     transition: .4s ease-out;
+    overflow: hidden;
+}
+.settings-nav-arrow-line-1, .settings-nav-arrow-line-2, .settings-nav-arrow-line-3{
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    left: 15px;
+    background: #766f6f;
+    transition: .4s ease-out;
+}
+.settings-nav-arrow-line-1{
+    top: 59px;
+    -webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.settings-nav-arrow-line-2{
+    top: 41px;
+    -webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.settings-nav-arrow-line-3{
+    top: 125px;
+    left: 0;
+    -webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    transform: rotate(-445deg);
 }
 .settings-nav-arrow:hover{
-    border-radius: 0 25% 25% 0;
+    border-radius: 0 35% 35% 0;
+    width: 110px;
 }
-.settings-nav-arrow img{
-    margin-top: 30px;
-    margin-left: 25px;
+.settings-nav-arrow:hover .settings-nav-arrow-line-1{
+    -webkit-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+    transform: rotate(225deg);
 }
-.nav-activa, .nav-active a{
+.settings-nav-arrow:hover .settings-nav-arrow-line-2{
+    -webkit-transform: rotate(-225deg);
+	-moz-transform: rotate(-225deg);
+	-ms-transform: rotate(-225deg);
+	-o-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+}
+.settings-nav-arrow:hover .settings-nav-arrow-line-3{
+    top: 49.5px;
+    left: 18px;
+    width: 35px;
+    -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+
+
+.nav-active a, .nav-active a{
     color: #2b2a2a !important;
 }
 
