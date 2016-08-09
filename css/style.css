@@ -45,12 +45,14 @@ header a, #settings a{
     float: right;
 }
 .header-nav p, .header-nav-private p{
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 10px 15px 10px 15px;
     border: 2px solid #fff;
+    transition: .2s ease-in;
 }
 .header-nav p:hover, .header-nav-private p:hover{
-    border: 2px solid #766f6f;
+    border-radius: 25px;
+    border: 2px solid #766f6f; 
 }
 
 #settings{
@@ -731,7 +733,19 @@ input:checked + .slider-checkbox:before {
     padding-top: 5px;
     cursor: pointer;
 }
-
+.commentary-button-fill{
+    background: -webkit-linear-gradient(bottom, #fff 50%, #f2b44a 50%);
+    background: -o-linear-gradient(bottom, #fff 50%, #f2b44a 50%);
+    background: linear-gradient(to top, #fff 50%, #f2b44a 50%);
+    background-size: 100% 200%;
+    background-position:bottom;
+    margin-left:10px;
+    transition:all .3s ease-in;
+}
+.commentary-button-fill:hover {
+    background-position:top;
+    color: #fff;
+}
 
 
 
@@ -803,12 +817,25 @@ input:checked + .slider-checkbox:before {
 }
 .private-settings-button{
     float: left;
-    color: #2b2a2a;
     margin-top: 50px;
     padding: 10px 75px 10px 75px;
     border-radius: 25px;
     border: 2px solid #2b2a2a;
     cursor: pointer;
+    color: #2b2a2a;
+}
+.button-fill{
+    background: -webkit-linear-gradient(bottom, #ebebeb 50%, #2b2a2a 50%);
+    background: -o-linear-gradient(bottom, #ebebeb 50%, #2b2a2a 50%);
+    background: linear-gradient(to top, #ebebeb 50%, #2b2a2a 50%);
+    background-size: 100% 200%;
+    background-position:bottom;
+    margin-left:10px;
+    transition:all .3s ease-in;
+}
+.button-fill:hover {
+    background-position:top;
+    color: #ebebeb;
 }
 .private-settings-options{
     float: left;
@@ -1219,6 +1246,9 @@ input:checked + .slider-checkbox:before {
 .personal-menu-nav:hover{
     cursor: pointer;
     color: #f2b44a;
+}
+.personal-menu-nav:hover >img{
+    visibility: hidden;
 }
 .personal-menu-nav img{
     float: left;
