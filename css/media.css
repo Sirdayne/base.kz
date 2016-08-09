@@ -1,3 +1,8 @@
+@media only screen and (max-width : 1350px) {
+    .footer-nav-part{
+        margin-right: 40px;
+    }
+}
 @media only screen and (max-width : 1200px) {
     /* footer */
     .footer-nav-right{
@@ -13,18 +18,17 @@
     }
 }
 
-
-@media only screen and (max-width : 900px) {
-    /* header */
+@media only screen and (max-width : 1100px) {
+   /* header */
     .header-nav, .header-nav-private{
         text-align: center;
-        height: 50px;
     }
     .header-nav{
-        width: 50%;
+        width: 30%;
     }
     .header-nav-private{
-        width: 100%;
+        width: 25%;
+        float: left;
     }
     .header-nav-img{
         width: 100%;
@@ -37,7 +41,23 @@
     .header-line{
         display: none;
     }
+     .settings-free-personal-cabinet{
+        width: 10px;
+    }
+    .settings-nav-search:hover{
+        width: 300px;
+    }
+    .settings-nav-search input{
+        left: 60px;
+    }
+    .settings-nav-search:hover input{
+        width: 150px;
+    }
     
+}
+
+@media only screen and (max-width : 900px) {
+  
     .post-rating{
         width: 50px;
     }
@@ -61,7 +81,15 @@
     .wrapper-grey{
         display: none;
     }
-    
+    .settings-nav-search:hover{
+        width: 200px;
+    }
+     .settings-nav-search input{
+        left: 30px;
+    }
+    .settings-nav-search:hover input{
+        width: 100px;
+    }
 }
 
 @media only screen and (max-width : 750px) {
@@ -100,27 +128,34 @@
 
 @media only screen and (max-width : 490px) {
     /* header */
-    .header-nav{
+    .header-nav, .header-nav-private{
         width: 100%;
     }
-    
     .settings-nav{
         width: 100%;
         text-align: center;
         height: 50px;
     }
     /* footer */
-    .footer-nav-part img{
-        margin-left: 25%;
-    }
     .footer-nav-part{
         width: 80%;
         height: 120px;
     }
+    .footer-nav-part img{
+        margin-left: 20%;
+    }
     .footer-navigation{
         margin-left: 10%;
     }
-    .footer-nav-section img{
-        margin: 0;
+    .footer-nav-float{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-nav-text{
+        width: 80%;
+    }
+    .footer-nav-social-hover img{
+        margin-top: 3px;
+        margin-left: 3px;
     }
 }

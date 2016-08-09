@@ -1309,6 +1309,7 @@ footer a{
     position: relative;
     margin: 40px;
     height: 200px;
+    margin-right: 80px;
 }
 .footer-nav-title{
     position: absolute;
