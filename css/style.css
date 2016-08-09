@@ -195,6 +195,7 @@ header a, #settings a{
 }
 .add-post{
     float: left;
+    position: relative;
     height: 50px;
     width: 50px;
 
@@ -203,6 +204,78 @@ header a, #settings a{
     font-weight: 100;
     background: #f2b44a;
     cursor: pointer;
+    overflow: hidden;
+}
+.animated-line-1, .animated-line-2, .animated-line-3, .animated-line-4, .animated-line-5 {
+    position: absolute;
+    background: #fff;
+    transition: .35s ease-out;
+}
+.animated-line-1{
+    height: 2px;
+    width: 25px;
+    
+    top: 25px;
+    left: 13px;
+}
+.animated-line-2{
+    height: 25px;
+    width: 2px;
+    
+    top: 13px;
+    left: 24px;
+}
+.animated-line-3{
+    height: 2px;
+    width: 25px;
+    
+    top: 25px;
+    left: -75px;
+}
+.animated-line-4{
+    height: 13px;
+    width: 2px;
+    
+    top: -25px;
+    left: -25px;
+    -webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.animated-line-5{
+    height: 13px;
+    width: 2px;
+    
+    top: 75px;
+    left: -25px;
+    -webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.add-post:hover .animated-line-1{
+    top: 25px;
+    left: 75px;
+}
+.add-post:hover .animated-line-2{
+    top: -50px;
+    left: 24px;
+}
+.add-post:hover .animated-line-3{
+    top: 25px;
+    left: 13px;
+}
+.add-post:hover .animated-line-4{
+    top: 24px;
+    left: 32px;
+}
+.add-post:hover .animated-line-5{
+    top: 15px;
+    left: 32px;
 }
 .add-post img{
     margin-top: 10px;
@@ -500,6 +573,7 @@ input:checked + .slider-checkbox:before {
 .post-content-img img{
     float: left;
     margin-top: 30px;
+    max-width: 100%;
 }
 
 
@@ -513,6 +587,8 @@ input:checked + .slider-checkbox:before {
 }
 .post-more-button{
     float: left;
+    position: relative;
+    overflow: hidden;
     height: 50px;
     width: 50px;
 
@@ -522,18 +598,96 @@ input:checked + .slider-checkbox:before {
     background: #f2b44a;
     cursor: pointer;
 }
-.post-more-circle{
-    float: left;
-    margin-top: 23px;
-    margin-left: 5px;
+.post-more-circle-1, .post-more-circle-2, .post-more-circle-3{
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
     height: 5px;
     width: 5px;
-    border-radius: 100%;
+    transition: .35s linear;
+}
+.post-more-circle-1{
+    top: 23px;
+    left: 15px;
+}
+.post-more-circle-2{
+    top: 23px;
+    left: 23px;
+}
+.post-more-circle-3{
+    top: 23px;
+    left: 31px;
+}
+.post-more-button:hover .post-more-circle-1{
+    left: 65px;
+}
+.post-more-button:hover .post-more-circle-2{
+    left: 175px;
+}
+.post-more-button:hover .post-more-circle-3{
+    left: 385px;
+}
+.post-more-line-1, .post-more-line-2, .post-more-line-3 {
+    position: absolute;
     background: #fff;
+    transition: .6s ease-out;
 }
-.post-more-circle:first-child{
-    margin-left: 13px;
+.post-more-line-1{
+    height: 2px;
+    width: 25px;
+    
+    top: 25px;
+    left: -75px;
+    -webkit-transform: rotate(720deg);
+	-moz-transform: rotate(720deg);
+	-ms-transform: rotate(720deg);
+	-o-transform: rotate(720deg);
+    transform: rotate(720deg);
 }
+.post-more-line-2{
+    height: 13px;
+    width: 2px;
+    
+    top: -25px;
+    left: -25px;
+    -webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.post-more-line-3{
+    height: 13px;
+    width: 2px;
+    
+    top: 75px;
+    left: -25px;
+    -webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.post-more-button:hover .post-more-line-1{
+    top: 25px;
+    left: 13px;
+    -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.post-more-button:hover .post-more-line-2{
+    top: 24px;
+    left: 32px;
+}
+.post-more-button:hover .post-more-line-3{
+    top: 15px;
+    left: 32px;
+}
+
+
 .post-more-text{
     float: left;
     color: #f2b44a;
@@ -1120,6 +1274,8 @@ input:checked + .slider-checkbox:before {
 }
 .add-category{
     float: left;
+    position: relative;
+    overflow: hidden;
     height: 50px;
     width: 50px;
 
@@ -1128,6 +1284,87 @@ input:checked + .slider-checkbox:before {
     font-weight: 100;
     background: #f2b44a;
     cursor: pointer;
+}
+
+.add-category-line-1, .add-category-line-2, .add-category-line-3, .add-category-line-4, .add-category-line-5 {
+    position: absolute;
+    background: #fff;
+    transition: .6s ease-out;
+}
+.add-category-line-1{
+    height: 2px;
+    width: 25px;
+    
+    top: 25px;
+    left: 13px;
+}
+.add-category-line-2{
+    height: 25px;
+    width: 2px;
+    
+    top: 13px;
+    left: 24px;
+}
+.add-category-line-3{
+    height: 2px;
+    width: 25px;
+    
+    top: 25px;
+    left: -75px;
+    -webkit-transform: rotate(720deg);
+	-moz-transform: rotate(720deg);
+	-ms-transform: rotate(720deg);
+	-o-transform: rotate(720deg);
+    transform: rotate(720deg);
+}
+.add-category-line-4{
+    height: 13px;
+    width: 2px;
+    
+    top: -25px;
+    left: -25px;
+    -webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.add-category-line-5{
+    height: 13px;
+    width: 2px;
+    
+    top: 75px;
+    left: -25px;
+    -webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.add-category:hover .add-category-line-1{
+    top: 25px;
+    left: 75px;
+}
+.add-category:hover .add-category-line-2{
+    top: -50px;
+    left: 24px;
+}
+.add-category:hover .add-category-line-3{
+    top: 25px;
+    left: 13px;
+    -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.add-category:hover .add-category-line-4{
+    top: 24px;
+    left: 32px;
+}
+.add-category:hover .add-category-line-5{
+    top: 15px;
+    left: 32px;
 }
 .add-category img{
     margin-top: 10px;

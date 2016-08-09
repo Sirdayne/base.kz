@@ -90,6 +90,10 @@
     .settings-nav-search:hover input{
         width: 100px;
     }
+    .wrapper-personal{
+        width: 99%;
+        margin-left: 1%;
+    }
 }
 
 @media only screen and (max-width : 750px) {
