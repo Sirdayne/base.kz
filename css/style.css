@@ -1,3 +1,53 @@
+@-webkit-keyframes pullInDown {
+	0% {
+		height: 0;
+	}
+
+	100% {
+		height: 40px;
+	}
+}
+
+@keyframes pullInDown {
+	0% {
+		height: 0;
+	}
+
+	100% {
+		height: 40px;
+	}
+}
+
+.pullInDown {
+	-webkit-animation-name: pullInDown;
+	animation-name: pullInDown;
+}
+
+@-webkit-keyframes pullInDownButton {
+	0% {
+		height: 0;
+	}
+
+	100% {
+		height: 50px;
+	}
+}
+
+@keyframes pullInDownButton {
+	0% {
+		height: 0;
+	}
+
+	100% {
+		height: 50px;
+	}
+}
+
+.pullInDownButton {
+	-webkit-animation-name: pullInDownButton;
+	animation-name: pullInDownButton;
+}
+
 /* HEADER */
 header{
     float: left;
@@ -582,24 +632,42 @@ input:checked + .slider-checkbox:before {
     margin-bottom: 2px;
 }
 
-.post-title h1{
+.post-title{
     float: left;
     width: 70%;
+    position: relative;
+}
+.post-title-border{
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    top: 5px;
+    left: -10px;
+    background: #f2b44a;
+}
+.post-title h1{
+    float: left;
+    width: 100%;
     margin-left: 15px;
-    
-    border-left: 5px solid #f2b44a;
     color: #f2b44a;
     font-weight: 100;
     padding-left: 20px;
     text-align: left;
 }
+
 .post-title img{
-    float: right;
     height: 20px;
-    margin: 5px;
 }
 .post-title-save, .post-title-add{
+    position: absolute;
+    top: 0;
     cursor: pointer;
+}
+.post-title-save{
+    right: -55px;
+}
+.post-title-add{
+    right: -20px;
 }
 .post-tags{
     float: left;
