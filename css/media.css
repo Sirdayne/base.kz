@@ -4,31 +4,21 @@
     }
 }
 @media only screen and (max-width : 1200px) {
-    /* footer */
     .footer-nav-right{
         float: left;
     }
-     .footer-nav-part{
-        width: 35%;
-        height: 90px; 
-        
-    }
     .footer-navigation{
-        margin-left: 25%;
+        width: 100%;
+        margin-left: 0;
     }
 }
-
 @media only screen and (max-width : 1100px) {
-   /* header */
     .header-nav, .header-nav-private{
         text-align: center;
     }
-    .header-nav{
-        width: 30%;
-    }
-    .header-nav-private{
-        width: 25%;
-        float: left;
+    .header-nav, .header-nav-private{
+        margin-right: 0;
+        font-size: 15px;
     }
     .header-nav-img{
         width: 100%;
@@ -41,9 +31,6 @@
     .header-line{
         display: none;
     }
-     .settings-free-personal-cabinet{
-        width: 10px;
-    }
     .settings-nav-search:hover{
         width: 300px;
     }
@@ -53,30 +40,17 @@
     .settings-nav-search:hover input{
         width: 150px;
     }
-    
 }
-
 @media only screen and (max-width : 900px) {
-  
-    .post-rating{
-        width: 50px;
-    }
-    
     .footer-nav-right{
         float: left;
     }
-    .footer-nav-part{
-        width: 30%;
-    }
-    .footer-navigation{
-        margin-left: 15%;
-    }
     #personal-cabinet{
         width: 100%;
+        margin-bottom: 50px;
     }
     #personal-cabinet-settings{
         width: 100%;
-        margin-top: 50px;
     }
     .wrapper-grey{
         display: none;
@@ -91,75 +65,171 @@
         width: 100px;
     }
     .wrapper-personal{
-        width: 99%;
-        margin-left: 1%;
+        width: 100%;
+    }
+    .your-comment-main{
+        margin-left: 0px;
+    }
+    .footer-nav-box{
+        margin-right: 15px;
     }
 }
-
-@media only screen and (max-width : 750px) {
-    /* header */
-    .settings-free, .settings-free-personal-cabinet{
-        display: none;
+@media only screen and (max-width : 850px) {
+    .footer-nav-part, .footer-nav-main{
+        width: 100%;
     }
-    .post-rating{
-        width: 20px;
+    .footer-nav-box{
+        margin-left: 15px;
+        margin-right: 30px;
+    }
+    .footer-nav-box-left{
+        margin-left: 15px;
+    }
+    .footer-nav-box-right{
+        margin-right: 15px;
+    }
+    
+}
+@media only screen and (max-width : 750px) {
+    .settings-free, .settings-free-personal-cabinet, .settings-nav-arrow, .wrapper-add-social, .display-none-750{
+        display: none;
     }
     .footer-nav-section{
         text-align: center;
     }
-}
-
-@media only screen and (max-width : 600px) {
-    .post-rating{
-        width: 80%;
-        height: 50px;
+    .settings-nav{
+        margin-right: 60px;
+        margin-left: 20px;
     }
-    .rating-like,.rating-dislike, .rating-number, .rating-checkbox{
+    #settings{
+        background: #e3e3e3;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    header{
+        display: none;
+    }
+    .header-mob{
+        display: block;
+    }
+    .add-post{
+        display: none;
+    }
+    .posts{
+        width: 100%;
+        margin-left: 0;
+    }
+    .post{
+        width: 95%;
+        margin-left: 5%;
+    }
+    .post-rating, .post-title-save, .post-title-add, .tag-commentaries{
+        display: none;
+    }
+    .rating-like, .rating-dislike{
         float: left;
     }
-    .rating-dislike,.slideThree{
-        margin: 0;
+    .rating-dislike{
+        margin-top: 0;
     }
-    .rating-checkbox, .rating-number{
-        transform: rotate(0deg);
-        margin: 0;
+    .rating-dislike{
+        margin-top: 5px;
     }
-    .rating-number{
-        margin-left: 20px;
-        width: 60px;
+    .post-mob-rating{
+        display: block;
+    }
+    #add-commentary, .add-commentary{
+        margin-left: 0;
+    }
+    .add-commentary-button{
+        display: none;
+    }
+    #add-commentary-border{
+        margin-top: 5px;
+    }
+    .add-commentary-number{
+        font-weight: bold;
+        height: 40px;
+    }
+    .add-commentary-number p{
+        margin-top: 10px;
+    }
+    .add-commentary-margin{
+        margin-left: 5px;
+    }
+    #comments{
+        margin-top: 15px;
+        margin-left: 5px;
+        width: 95%;
+    }
+    .comments, .comment-main, .comment{
+        margin-left: 0;
+        width: 100%;
+    }
+    .personal-menu{
+        display: none;
+    }
+    #personal-cabinet{
+        margin-bottom: 0;
+    }
+    .personal-50{
+        width: 50%;
+    }
+    .extra-main{
+        display: block;
+    }
+    footer{
+        display: none;
+    }
+    .footer-mob{
+        display: block;
     }
 }
-
-@media only screen and (max-width : 490px) {
-    /* header */
-    .header-nav, .header-nav-private{
-        width: 100%;
+@media only screen and (max-width : 600px) {
+    .post-title-save, .post-title-add{
+        top: -48px;
+    }
+    .post-title-save{
+        right: -105px;
+    }
+    .post-title-add{
+        right: -75px;
+    }
+    .your-comment-input{
+        width: 60%;
+        margin-top: 25px;
+    }
+    .your-commentary{
+        margin-top: 25px;
+        width: 60%;
+        margin-right: 0;
+    }
+    .your-commentary-button{
+        width: 60%;
+        margin-top: 25px;
     }
     .settings-nav{
-        width: 100%;
-        text-align: center;
-        height: 50px;
-    }
-    /* footer */
-    .footer-nav-part{
-        width: 80%;
-        height: 120px;
-    }
-    .footer-nav-part img{
-        margin-left: 20%;
-    }
-    .footer-navigation{
-        margin-left: 10%;
-    }
-    .footer-nav-float{
-        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 5px;
+        width: 50%;
         text-align: center;
     }
-    .footer-nav-text{
-        width: 80%;
+} 
+@media only screen and (max-width : 450px){      
+    .settings-nav{
+        width: 100%;
     }
-    .footer-nav-social-hover img{
-        margin-top: 3px;
-        margin-left: 3px;
+    .header-mob-navigation p{
+        margin-right: 0;
+    }
+    .post-mob-rating-left, .post-mob-rating-right{
+        width: 100%;
+        margin-top: 5px;
+    }
+}  
+@media only screen and (max-width : 350px){
+    .header-mob-logo img{
+        margin-top: 15px;
     }
 }
