@@ -40,6 +40,9 @@
     .settings-nav-search:hover input{
         width: 150px;
     }
+    .settings-free-personal-cabinet{
+        width: 100px;
+    }
 }
 @media only screen and (max-width : 900px) {
     .footer-nav-right{
@@ -104,6 +107,8 @@
     #settings{
         background: #e3e3e3;
         text-transform: uppercase;
+    }
+    #settings a{
         text-decoration: underline;
     }
     header{
@@ -162,12 +167,36 @@
         margin-left: 5px;
         width: 95%;
     }
-    .comments, .comment-main, .comment{
-        margin-left: 0;
+    .comments, .comment-main{
         width: 100%;
+    }
+    .comments{
+        margin-left: 0;
+    }
+    .comment-main{
+        margin-left: 5px;
+    }
+    .your-comment{
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+    .your-comment-input{
+        width: 60%;
+        margin-top: 20px;
+    }
+    .your-commentary{
+        width: 60%;
+        margin-right: 35px;
+    }
+    .your-comment-row textarea{
+        width: 90%;
     }
     .personal-menu{
         display: none;
+    }
+    .personal-line{
+        height: 0px;
     }
     #personal-cabinet{
         margin-bottom: 0;
@@ -214,6 +243,30 @@
         margin-bottom: 5px;
         width: 50%;
         text-align: center;
+    }
+    .your-comment-input{
+        width: 90%;
+    }
+    .your-commentary{
+        width: 90%;
+    }
+    .private-settings-option{
+        width: 90%;
+        margin-top: 35px;
+    }
+    .private-settings-toggle{
+        width: 90%;
+        margin-top: 15px;
+    }
+    
+    .private-settings input, .private-settings select{
+        width: 90%;
+        margin-top: 45px;
+    }
+    
+    .private-password input{
+        width: 90%;
+        margin-top: 25px;
     }
 } 
 @media only screen and (max-width : 450px){      

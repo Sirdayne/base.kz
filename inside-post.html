@@ -57,13 +57,13 @@
                 
                 
                 <div class="header-nav-popup">
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-lenta.png" alt=""><span>ЛЕНТА</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-marks.png" alt=""><span>ОЦЕНКИ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></a></div>
+                    <a href="personal-cabinet.html"><div class="header-nav-popup-inner"><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></div></a>
+                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-lenta.png" alt=""><span>ЛЕНТА</span></div></a>
+                    <a href="personal-cabinet-post.html"><div class="header-nav-popup-inner"><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></div></a>
+                    <a href="personal-cabinet-messages.html"><div class="header-nav-popup-inner"><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></div></a>
+                    <a href="personal-cabinet-comments.html"><div class="header-nav-popup-inner"><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></div></a>
+                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-marks.png" alt=""><span>ОЦЕНКИ</span></div></a>
+                    <a href="personal-cabinet-saved.html"><div class="header-nav-popup-inner"><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></div></a>
                 </div>
             </div>
         </div>
@@ -90,13 +90,13 @@
             <div class="header-mob-navigation">
             <p>GAZIZ007</p>
             <div class="header-mob-popup">
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></div></a>
+                    <a href="personal-cabinet.html"><div class="header-nav-popup-inner"><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></div></a>
                     <a href=""><div class="header-nav-popup-inner"><img src="img/pers-lenta.png" alt=""><span>ЛЕНТА</span></div></a>
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></div></a>
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></div></a>
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></div></a>
+                    <a href="personal-cabinet-post.html"><div class="header-nav-popup-inner"><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></div></a>
+                    <a href="personal-cabinet-messages.html"><div class="header-nav-popup-inner"><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></div></a>
+                    <a href="personal-cabinet-comments.html"><div class="header-nav-popup-inner"><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></div></a>
                     <a href=""><div class="header-nav-popup-inner"><img src="img/pers-marks.png" alt=""><span>ОЦЕНКИ</span></div></a>
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></div></a>
+                    <a href="personal-cabinet-saved.html"><div class="header-nav-popup-inner"><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></div></a>
             </div>
             </div> 
         </div>
@@ -304,7 +304,7 @@
         <div class="add-commentary">  
             <div class="add-commentary-margin">     
                 <div class="add-commentary-number"><p><span>216</span> комментариев</p></div>
-                <div class="add-commentary-button commentary-button-fill">добавить комментарий</div>
+                <button class="add-commentary-button commentary-button-fill">добавить комментарий</button>
             </div> 
         </div> 
     </section>
@@ -313,14 +313,15 @@
    
      <section id="comments">
         <div class="comments">  
-            <div class="comment-main">  
-                <div class="comment-rating">
-                    <span>45</span> 
-                    <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
-                    <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
-                </div>   
+            <div class="comment-main">     
                 <div class="comment">
                     <div class="comment-row">  
+                        <div class="comment-rating">
+                            <span>45</span> 
+                            <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
+                            <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
+                        </div>
+                    
                         <div class="comment-nickname">JOHN DOE</div>
                         <div class="comment-time">отправлено <span>4</span> часа назад</div>
                     </div> 
@@ -333,19 +334,19 @@
                     <div class="comment-send">
                         ответить
                     </div>
+                    <button id="button-spoiler"><p>+</p></button>
                     <div class="comment-spoiler">
-                        <div class="comment-spoiler-border"></div>
-                        <div class="comment-spoiler-line"></div>
-                    </div>
                     <!-- COMMENTS INSIDE COMMENTS START -->
                             <div class="comment-main">  
-                                <div class="comment-rating">
-                                    <span>45</span> 
-                                    <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
-                                    <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
-                                </div>   
+                                
                                 <div class="comment">
                                     <div class="comment-row">  
+                                        <div class="comment-rating">
+                                            <span>45</span> 
+                                            <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
+                                            <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
+                                        </div>   
+                                       
                                         <div class="comment-nickname">JOHN DOE</div>
                                         <div class="comment-time">отправлено <span>4</span> часа назад</div>
                                     </div> 
@@ -362,13 +363,16 @@
                             </div> 
                             
                             <div class="comment-main">  
-                                <div class="comment-rating">
-                                    <span>45</span> 
-                                    <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
-                                    <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
-                                </div>   
+                                
                                 <div class="comment">
                                     <div class="comment-row">  
+                                        <div class="comment-rating">
+                                            <span>45</span> 
+                                            <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
+                                            <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
+                                        </div>   
+                                       
+                                        
                                         <div class="comment-nickname">JOHN DOE</div>
                                         <div class="comment-time">отправлено <span>4</span> часа назад</div>
                                     </div> 
@@ -383,6 +387,7 @@
                                     </div>
                                 </div>
                             </div> 
+                    </div>
                     <!-- COMMENTS INSIDE COMMENTS END -->
                 </div>
             </div> 
@@ -396,16 +401,23 @@
                     <h1>Ваш комментарий</h1>
                 </div>
                 
+                <!--
                 <div class="your-comment-row">
                    
                     <div class="your-comment-input"><input type="text" name="Имя" placeholder="Имя"></div>
                     <div class="your-comment-input"><input type="text" name="E-MAIL" class="your-comment-input" placeholder="E-mail"></div>
                 
                 </div>
+                -->
                 
                 <div class="your-comment-row">
+                   
+                    <!--
                     <div class="your-commentary"><input type="text" name="Комментарий" placeholder="Написать комментарий"></div>
-                    <div class="your-commentary-button commentary-button-fill">отправить</div>
+                    -->
+                    <textarea placeholder="Написать комментарий"></textarea>
+                    
+                    <button class="your-commentary-button commentary-button-fill">отправить</button>
                     
                 </div>
                 
@@ -504,6 +516,9 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
+    
+    <script src="js/base.js"></script>
+    
 
 </body>
 </html>

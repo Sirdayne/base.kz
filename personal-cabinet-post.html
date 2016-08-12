@@ -27,22 +27,83 @@
     <header>
         <div class="header-navigation">
             <div class="header-nav-img">
-                <a href="index.html"><img src="img/base-logo.png" alt="Base лого"></a> 
+                <a href="index.html"><img src="img/base-logo.png" alt="Base лого"></a>
             </div>
             
             <div class="header-line"></div>
             
-            <div class="header-nav"><a href=""><p>ГОРЯЧЕЕ</p></a></div>
+            <div class="header-nav nav-active"><a href=""><p>ГОРЯЧЕЕ</p></a></div>
             <div class="header-nav"><a href=""><p>ЛУЧШЕЕ</p></a></div>
             <div class="header-nav"><a href=""><p>СВЕЖЕЕ</p></a></div>
-            <div class="header-nav"><a href=""><p>СООБЩЕСТВА</p></a></div>
+            <div class="header-nav"><a href=""><p>КАТЕГОРИИ</p></a></div>
         
-            <div class="header-nav-private nav-active"><a href="personal-cabinet.html"><p>ЛИЧНЫЙ КАБИНЕТ</p></a></div>
+            <div class="header-nav-private">
+                
+                <div class="header-nav-login-rating">
+                    <div class="header-nav-login">
+                    GAZIZ007
+                    <div class="header-nav-login-line-1"></div>
+                    <div class="header-nav-login-line-2"></div>
+                    <div class="header-nav-messages-circle"><span>2</span></div>
+                    
+                    </div>
+                    <div class="header-nav-rating positive">+1786</div> <!-- negative class -->
+                </div>
+                <a href="personal-cabinet.html">
+                <div class="header-nav-avatar">
+                    <img src="img/personal-photo.png" alt="">
+                </div>
+                </a>
+                
+                
+                <div class="header-nav-popup">
+                    <a href="personal-cabinet.html"><div class="header-nav-popup-inner"><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></div></a>
+                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-lenta.png" alt=""><span>ЛЕНТА</span></div></a>
+                    <a href="personal-cabinet-post.html"><div class="header-nav-popup-inner"><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></div></a>
+                    <a href="personal-cabinet-messages.html"><div class="header-nav-popup-inner"><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></div></a>
+                    <a href="personal-cabinet-comments.html"><div class="header-nav-popup-inner"><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></div></a>
+                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-marks.png" alt=""><span>ОЦЕНКИ</span></div></a>
+                    <a href="personal-cabinet-saved.html"><div class="header-nav-popup-inner"><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></div></a>
+                </div>
+            </div>
         </div>
     </header>
+    <div class="header-mob">
+        <div class="header-mob-burger">
+            <div class="burger-lines">
+                <div class="burger-line-1"></div>
+                <div class="burger-line-2"></div>
+                <div class="burger-line-3"></div>
+                <div class="burger-menu">
+                    <a href=""><div class="burger-nav"><p>ГОРЯЧЕЕ</p></div></a>
+                    <a href=""><div class="burger-nav"><p>ЛУЧШЕЕ</p></div></a>
+                    <a href=""><div class="burger-nav"><p>СВЕЖЕЕ</p></div></a>
+                    <a href=""><div class="burger-nav"><p>КАТЕГОРИИ</p></div></a>
+                    <a href=""><div class="burger-nav"><p>ДОБАВИТЬ ПОСТ</p></div></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-mob-logo"><a href="index.html"><img src="img/header-mob-logo.png" alt=""></a></div>
+        
+        <div class="header-mob-login">
+            <div class="header-mob-navigation">
+            <p>GAZIZ007</p>
+            <div class="header-mob-popup">
+                    <a href="personal-cabinet.html"><div class="header-nav-popup-inner"><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></div></a>
+                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-lenta.png" alt=""><span>ЛЕНТА</span></div></a>
+                    <a href="personal-cabinet-post.html"><div class="header-nav-popup-inner"><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></div></a>
+                    <a href="personal-cabinet-messages.html"><div class="header-nav-popup-inner"><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></div></a>
+                    <a href="personal-cabinet-comments.html"><div class="header-nav-popup-inner"><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></div></a>
+                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-marks.png" alt=""><span>ОЦЕНКИ</span></div></a>
+                    <a href="personal-cabinet-saved.html"><div class="header-nav-popup-inner"><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></div></a>
+            </div>
+            </div> 
+        </div>
+    </div>
     
     <section id="settings">
-        <div class="settings-inner-inside">
+        <div class="settings-inner-inside display-none-750">
             <a href="">
                 <div class="settings-nav-arrow">
                     <div class="settings-nav-arrow-line-1"></div>
@@ -51,8 +112,8 @@
                 </div>
             </a>
             <div class="settings-free-personal-cabinet"></div>
-            <div class="settings-nav"><a href="">ПО ВРЕМЕНИ</a></div>
-            <div class="settings-nav"><a href="">ПО РЕЙТИНГУ</a></div>
+            <div class="settings-nav"><a href="">по времени</a></div>
+            <div class="settings-nav"><a href="">по рейтингу</a></div>
            <!--
             <div class="settings-nav-search"></div>
             -->
@@ -92,14 +153,25 @@
             </div>
             
             <div class="personal-info">
-                <div class="personal-info-option">пикабушник уже <span>2</span> дня</div>
-                <div class="personal-info-option">рейтинг: <span>0</span></div>
-                <div class="personal-info-option">комментариев: <span>0</span></div>
-                <div class="personal-info-option">добавил постов: <span>0</span></div>
-                <div class="personal-info-option">из них в "горячем": <span>0</span></div>
-                <div class="personal-info-option">поставил: </div>
-                <div class="personal-info-option"><span>1</span> плюс</div>
-                <div class="personal-info-option"><span>0</span> минусов</div>
+                <div class="personal-50">
+                    <div class="personal-info-option">пикабушник уже <span>2</span> дня</div>
+                    <div class="personal-info-option">рейтинг: <span>0</span></div>
+                    <div class="personal-info-option">комментариев: <span>0</span></div>
+                    <div class="personal-info-option">добавил постов: <span>0</span></div>
+                    <div class="personal-info-option">из них в "горячем": <span>0</span></div>
+                </div>
+                
+                <div class="personal-50">
+                    <div class="personal-info-option">поставил: <span>1</span> плюс</div>
+                    <div class="personal-info-option personal-margin-left"><p><span>0</span> минусов</p></div>
+                </div>
+            </div>
+            
+            <div class="extra-main">
+                <p>ПО ВРЕМЕНИ <img src="img/extra-nav.png" alt=""></p>
+                <div class="extra-navigation">
+                    <a href=""><div class="extra-nav">ПО-РЕЙТИНГУ</div></a>
+                </div>
             </div>
             
             <div class="personal-line"></div>
@@ -189,37 +261,45 @@
     
   
     
+   <div class="footer-mob">
+        <div class="footer-mob-nav"><p>МЕНЮ</p></div>
+        <div class="footer-mob-nav-line"></div>
+        <div class="footer-mob-nav"><a href="">ГОРЯЧЕЕ</a></div>
+        <div class="footer-mob-nav"><a href="">ЛУЧШЕЕ</a></div>
+        <div class="footer-mob-nav"><a href="">СВЕЖЕЕ</a></div>
+        <div class="footer-mob-nav"><a href="">КАТЕГОРИИ</a></div>
+        <div class="footer-mob-nav"><a href="">СПИСОК ТЕГОВ</a></div>
+        
+        <div class="footer-mob-nav">support@base.kz - Tex. поддержка</div>
+        
+        <div class="footer-mob-nav"><div class="foot-mob-img"><a href=""><img src="img/1instagram.png" alt="">instagram</a></div></div>
+        <div class="footer-mob-nav"><div class="foot-mob-img"><a href=""><img src="img/1facebook.png" alt="">facebook</a></div></div>
+        <div class="footer-mob-nav"><div class="foot-mob-img"><a href=""><img src="img/1twitter.png" alt="">twitter</a></div></div>
+        <div class="footer-mob-nav"><div class="foot-mob-img"><a href=""><img src="img/1vkontakte.png" alt="">vkontakte</a></div></div>
+                
+        <div class="footer-mob-nav"><a href="index.html"><img src="img/footer-mob-logo.png" alt=""></a></div>      
+    </div>
+    
     <footer>
         <div class="footer-navigation">
-           <div class="footer-nav-part">
-                <a href="index.html"><img src="img/base-logo.png" alt="Base лого"></a>
-            </div>
-            
+            <a href="index.html">
             <div class="footer-nav-part">
-                <div class="footer-nav-title">МЕНЮ</div>
-                <div class="footer-nav-section">
-                        <div class="footer-nav footer-margin"><a href="">ГОРЯЧЕЕ</a></div>
-                        <div class="footer-nav footer-margin"><a href="">ЛУЧШЕЕ</a></div>
-                        <div class="footer-nav footer-margin"><a href="">СВЕЖЕЕ</a></div>
-                        <div class="footer-nav footer-margin"><a href="">СООБЩЕСТВА</a></div>
-                </div>
+                <img src="img/footer-logo.png" alt="">
             </div>
-               
-            <div class="footer-nav-part">
-                <div class="footer-nav-title">КОНТАКТЫ</div>
-                <div class="footer-nav-section">
-                        <div class="footer-nav">ТОО "Global Innovations"</div>
-                        <div class="footer-nav">Казахстан, г.Астана</div>
-                        <div class="footer-nav">ул.Кунаева, д.35/1, кв. 3</div>
-                        <div class="footer-nav">info@ginnova.kz</div>
-                        <div class="footer-nav">+7 (7172) 516 521 - Тех. поддержка</div>
-                        <div class="footer-nav">+7 (7172) 516 520 - Ресепшн</div>
+            </a>
+            <div class="footer-nav-main">
+                <div class="footer-nav-line">
+                    <div class="footer-nav-box"><a href="">ГОРЯЧЕЕ</a></div>
+                    <div class="footer-nav-box"><a href="">ЛУЧШЕЕ</a></div>
+                    <div class="footer-nav-box"><a href="">СВЕЖЕЕ</a></div>
+                    <div class="footer-nav-box"><a href="">КАТЕГОРИИ</a></div>
+                    <div class="footer-nav-box"><a href="">СПИСОК ТЕГОВ</a></div>
                 </div>
-            </div>
-             <div class="footer-nav-part footer-nav-right">  
-                <div class="footer-nav-title">СОЦ&nbspСЕТИ</div>
-                <div class="footer-nav-section">
-                        <div class="footer-nav-float footer-margin">
+                <div class="footer-nav-line margin-top-50">
+                    <div class="footer-nav-box-left">support@base.kz - Tex. поддержка</div>
+                    <div class="footer-nav-box-right">
+                        <div class="footer-nav-section">
+                        <div class="footer-nav-float">
                             <a href="">
                                 <div class="footer-nav-social">
                                     <img src="img/1instagram.png" alt="">
@@ -227,11 +307,9 @@
                                 <div class="footer-nav-social-hover animated zoomIn">
                                     <img src="img/1instagram-hover.png" alt="">
                                 </div>
-                                
-                                <div class="footer-nav-text">instagramm</div>
                             </a>
                         </div>
-                        <div class="footer-nav-float footer-margin">
+                        <div class="footer-nav-float">
                             <a href="">
                                 <div class="footer-nav-social">
                                     <img src="img/1facebook.png" alt="">
@@ -239,11 +317,9 @@
                                 <div class="footer-nav-social-hover animated zoomIn">
                                     <img src="img/1facebook-hover.png" alt="">
                                 </div>
-                                
-                                <div class="footer-nav-text">facebook</div>
                             </a>
                         </div>
-                        <div class="footer-nav-float footer-margin">
+                        <div class="footer-nav-float">
                             <a href="">
                                 <div class="footer-nav-social">
                                     <img src="img/1twitter.png" alt="">
@@ -251,11 +327,9 @@
                                 <div class="footer-nav-social-hover animated zoomIn">
                                     <img src="img/1twitter-hover.png" alt="">
                                 </div>
-                                
-                                <div class="footer-nav-text">twitter</div>
                             </a>
                         </div>
-                        <div class="footer-nav-float footer-margin">
+                        <div class="footer-nav-float">
                             <a href="">
                                 <div class="footer-nav-social">
                                     <img src="img/1vkontakte.png" alt="">
@@ -263,22 +337,16 @@
                                 <div class="footer-nav-social-hover animated zoomIn">
                                     <img src="img/1vkontakte-hover.png" alt="">
                                 </div>
-                                
-                                <div class="footer-nav-text">vkontakte</div>
                             </a>
                         </div>
                 </div>
+                        
+                        
+                    </div>
+                </div>
             </div>
-            
         </div>
     </footer>
-    
-	<!--[if lt IE 9]>
-	<script src="js/es5-shim.min.js"></script>
-	<script src="js/html5shiv.min.js"></script>
-	<script src="js/html5shiv-printshiv.min.js"></script>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 
 </body>
 </html>

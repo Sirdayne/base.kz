@@ -57,13 +57,13 @@
                 
                 
                 <div class="header-nav-popup">
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-lenta.png" alt=""><span>ЛЕНТА</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-marks.png" alt=""><span>ОЦЕНКИ</span></a></div>
-                    <div class="header-nav-popup-inner"><a href=""><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></a></div>
+                    <a href="personal-cabinet.html"><div class="header-nav-popup-inner"><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></div></a>
+                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-lenta.png" alt=""><span>ЛЕНТА</span></div></a>
+                    <a href="personal-cabinet-post.html"><div class="header-nav-popup-inner"><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></div></a>
+                    <a href="personal-cabinet-messages.html"><div class="header-nav-popup-inner"><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></div></a>
+                    <a href="personal-cabinet-comments.html"><div class="header-nav-popup-inner"><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></div></a>
+                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-marks.png" alt=""><span>ОЦЕНКИ</span></div></a>
+                    <a href="personal-cabinet-saved.html"><div class="header-nav-popup-inner"><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></div></a>
                 </div>
             </div>
         </div>
@@ -90,13 +90,13 @@
             <div class="header-mob-navigation">
             <p>GAZIZ007</p>
             <div class="header-mob-popup">
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></div></a>
+                    <a href="personal-cabinet.html"><div class="header-nav-popup-inner"><img src="img/pers-settings.png" alt=""><span>НАСТРОЙКИ</span></div></a>
                     <a href=""><div class="header-nav-popup-inner"><img src="img/pers-lenta.png" alt=""><span>ЛЕНТА</span></div></a>
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></div></a>
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></div></a>
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></div></a>
+                    <a href="personal-cabinet-post.html"><div class="header-nav-popup-inner"><img src="img/pers-posts.png" alt=""><span>ПОСТЫ</span></div></a>
+                    <a href="personal-cabinet-messages.html"><div class="header-nav-popup-inner"><img src="img/pers-messages.png" alt=""><span>СООБЩЕНИЯ</span></div></a>
+                    <a href="personal-cabinet-comments.html"><div class="header-nav-popup-inner"><img src="img/pers-comments.png" alt=""><span>КОММЕНТАРИИ</span></div></a>
                     <a href=""><div class="header-nav-popup-inner"><img src="img/pers-marks.png" alt=""><span>ОЦЕНКИ</span></div></a>
-                    <a href=""><div class="header-nav-popup-inner"><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></div></a>
+                    <a href="personal-cabinet-saved.html"><div class="header-nav-popup-inner"><img src="img/pers-save.png" alt=""><span>СОХРАНЕННОЕ</span></div></a>
             </div>
             </div> 
         </div>
@@ -176,7 +176,7 @@
                         -->
                         
                         <!-- Rounded switch -->
-                        <label class="switch-checkbox">
+                        <label class="switch-checkbox" id="switch">
                           <input type="checkbox" checked />
                           <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
                         </label>
@@ -196,7 +196,7 @@
                 </div>
                 
                 
-                <div class="post-content">
+                <div class="post-content" id="post-content">
                     <p>Дорогой пикабу,</p><br>
                     <p> 
                         Я очень рад, что знаю тебя с рождения и пишу эти строки. Наверное, как и все, ты не помнишь, каким был в первые дни жизни? У меня сохранилась фотография. 
@@ -486,7 +486,7 @@
 	<script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     
-    
+    <script src="js/base.js"></script>
 
 </body>
 </html>

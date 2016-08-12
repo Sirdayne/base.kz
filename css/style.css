@@ -50,7 +50,8 @@
 
 button{
     outline: none;
-    
+    border: none;
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -119,10 +120,9 @@ header a, #settings a{
 .header-nav-popup{
     position: absolute;
     float: left;
-    bottom: -320px;
+    bottom: -280px;
     right: 0;
     width: 200px;
-    height: 320px;
     background: #d7d7d7;
     z-index: 2;
     display: none;
@@ -288,6 +288,9 @@ header a, #settings a{
     color: #fff;
     font-weight: bold;
 }
+.header-mob-navigation a{
+    color: #fff;
+}
 .header-mob-navigation p{
     margin-top: 30px;
     margin-right: 20px;
@@ -298,7 +301,6 @@ header a, #settings a{
     top: 80px;
     right: 0;
     width: 200px;
-    height: 320px;
     background: #d7d7d7;
     display: none;
     z-index: 2;
@@ -747,7 +749,7 @@ header a, #settings a{
     width: 100%;
     margin-top: 25px;
     margin-left: 70px;
-    margin-bottom: 75px;
+    margin-bottom: 95px;
 }
 .post-rating{
     position: absolute;
@@ -1110,6 +1112,7 @@ input:checked + .slider-checkbox:before {
 }
 .add-commentary-number p{
     margin-top: 40px;
+    font-weight: bold;
 }
 .add-commentary-button{
     float: right;
@@ -1133,9 +1136,9 @@ input:checked + .slider-checkbox:before {
     margin-left: 15%;
 }
 .comment-main{
-    margin-left: 10px;
+    margin-left: 50px;
     float: left;
-    width: 90%;
+    width: 95%;
     min-width: 200px;
 }
 .comment-rating{
@@ -1162,6 +1165,7 @@ input:checked + .slider-checkbox:before {
 .comment-nickname{
     float: left;
     color: #2b2a2a;
+    font-weight: bold;
 }
 .comment-time{
     float: left;
@@ -1179,26 +1183,26 @@ input:checked + .slider-checkbox:before {
 }
 .comment-spoiler{
     float: left;
+    width: 100%;
+    border-left: 2px solid #c2c2c2;
+}
+#button-spoiler{
+    float: left;
     width: 20px;
-}
-.comment-spoiler-border{
-    float: left;
-    margin-top: 3px;
-    height: 10px;
-    width: 10px;
-    border: 2px solid #c2c2c2;
-    border-radius: 100%;
+    height: 20px;
+    border-radius: 50%;
     color: #c2c2c2;
-    font-weight: bold;
-    cursor: pointer;
+    background: #fff;
+    font-size: 17px;
+    border: 1px solid #c2c2c2; 
+    margin-left: -9px;
 }
-.comment-spoiler-line{
-    float: left;
-    margin-top: 10px;
-    margin-left: 6px;
-    height: 400px;
-    width: 2px;
+#button-spoiler:hover{
     background: #c2c2c2;
+    color: #fff; 
+}
+#button-spoiler p{
+    margin-left: -2px;
 }
 #your-comment{
     margin-top: 75px;
@@ -1228,6 +1232,16 @@ input:checked + .slider-checkbox:before {
     text-align: left;
     font-size: 20px;
 }
+.your-comment-row textarea{
+    float: left;
+    color: #766f6f;
+    height: 100px;
+    width: 50%;
+    font-size: 14px;
+    outline: none;
+    margin-right: 50%;
+    font-family: "Arial", Helvetica, sans-serif;
+}
 .your-comment-row input{
     float: left;
     color: #766f6f;
@@ -1253,12 +1267,12 @@ input:checked + .slider-checkbox:before {
 }
 .your-commentary-button{
     width: 20%;
+    margin-top: 25px;
     color: #f2b44a;
     border: 2px solid #f2b44a;
     border-radius: 25px;
     text-align: center;
-    height: 30px;
-    padding-top: 5px;
+    height: 35px;
     cursor: pointer;
 }
 .commentary-button-fill{
@@ -1351,7 +1365,6 @@ input:checked + .slider-checkbox:before {
 }
 .private-settings-option, .private-settings-toggle{
     float: left;
-    height: 25px;
     margin-top: 25px;
     font-size: 14px;
 }
@@ -1822,6 +1835,9 @@ input:checked + .slider-checkbox:before {
     cursor: pointer;
     display: none;
 }
+.extra-main p{
+    text-decoration: underline;
+}
 .extra-main img{
     width: 20px;
 }
@@ -1868,6 +1884,7 @@ input:checked + .slider-checkbox:before {
     margin-left: 5%;
     margin-top: 35px;
     color: #2b2a2a;
+    font-size: 15px;
 }
 .personal-menu-nav{
     position: relative;
