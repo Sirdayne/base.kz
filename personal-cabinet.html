@@ -183,70 +183,83 @@
             <div class="personal-line"></div>
             
             <div class="personal-menu">
-            <a href="personal-cabinet.html">
-               <div class="personal-menu-nav">
-                  <img src="img/pers-settings.png" alt="">
-                   <div class="personal-menu-nav-hover animated zoomIn">
-                       <img src="img/pers-settings-hover.png" alt="">
-                   </div>
-                   <p>НАСТРОЙКИ</p>
+                <div class="pers-men-nav">
+                    <a href="personal-cabinet.html">
+                       <div class="personal-menu-nav">
+                          <img src="img/pers-settings.png" alt="">
+                           <div class="personal-menu-nav-hover animated zoomIn">
+                               <img src="img/pers-settings-hover.png" alt="">
+                           </div>
+                           <p>НАСТРОЙКИ</p>
+                        </div>
+                    </a>  
                 </div>
-            </a>  
-            <a href="">    
-                <div class="personal-menu-nav">
-                   <img src="img/pers-lenta.png" alt="">
-                   <div class="personal-menu-nav-hover animated zoomIn">
-                       <img src="img/pers-lenta-hover.png" alt="">
-                   </div>
-                   <p>ЛЕНТА</p>
+                <div class="pers-men-nav">
+                    <a href="">    
+                        <div class="personal-menu-nav">
+                           <img src="img/pers-lenta.png" alt="">
+                           <div class="personal-menu-nav-hover animated zoomIn">
+                               <img src="img/pers-lenta-hover.png" alt="">
+                           </div>
+                           <p>ЛЕНТА</p>
+                        </div>
+                    </a>   
                 </div>
-            </a>    
-            <a href="personal-cabinet-post.html">   
-                <div class="personal-menu-nav">
-                   <img src="img/pers-posts.png" alt="">
-                   <div class="personal-menu-nav-hover animated zoomIn">
-                       <img src="img/pers-posts-hover.png" alt="">
-                   </div>
-                   <p>ПОСТЫ</p>
+                <div class="pers-men-nav">
+                    <a href="personal-cabinet-post.html">   
+                        <div class="personal-menu-nav">
+                           <img src="img/pers-posts.png" alt="">
+                           <div class="personal-menu-nav-hover animated zoomIn">
+                               <img src="img/pers-posts-hover.png" alt="">
+                           </div>
+                           <p>ПОСТЫ</p>
+                        </div>
+                    </a> 
                 </div>
-            </a>    
-            <a href="personal-cabinet-messages.html">    
-                <div class="personal-menu-nav">
-                   <img src="img/pers-messages.png" alt="">
-                   <div class="personal-menu-nav-hover animated zoomIn">
-                       <img src="img/pers-messages-hover.png" alt="">
-                   </div>
-                   <p>СООБЩЕНИЯ</p>
+                <div class="pers-men-nav">   
+                    <a href="personal-cabinet-messages.html">    
+                        <div class="personal-menu-nav">
+                           <img src="img/pers-messages.png" alt="">
+                           <div class="personal-menu-nav-hover animated zoomIn">
+                               <img src="img/pers-messages-hover.png" alt="">
+                           </div>
+                           <p>СООБЩЕНИЯ</p>
+                        </div>
+                    </a>    
                 </div>
-            </a>    
-            <a href="personal-cabinet-comments.html">    
-                <div class="personal-menu-nav">
-                   <img src="img/pers-comments.png" alt="">
-                   <div class="personal-menu-nav-hover animated zoomIn">
-                       <img src="img/pers-comments-hover.png" alt="">
-                   </div>
-                   <p>КОММЕНТАРИИ</p>
+                <div class="pers-men-nav">
+                    <a href="personal-cabinet-comments.html">    
+                        <div class="personal-menu-nav">
+                           <img src="img/pers-comments.png" alt="">
+                           <div class="personal-menu-nav-hover animated zoomIn">
+                               <img src="img/pers-comments-hover.png" alt="">
+                           </div>
+                           <p>КОММЕНТАРИИ</p>
+                        </div>
+                    </a>   
                 </div>
-            </a>    
-            <a href="">    
-                <div class="personal-menu-nav">
-                   <img src="img/pers-marks.png" alt="">
-                   <div class="personal-menu-nav-hover animated zoomIn">
-                       <img src="img/pers-marks-hover.png" alt="">
-                   </div>
-                   <p>ОЦЕНКИ</p>
+                <div class="pers-men-nav">
+                    <a href="">    
+                        <div class="personal-menu-nav">
+                           <img src="img/pers-marks.png" alt="">
+                           <div class="personal-menu-nav-hover animated zoomIn">
+                               <img src="img/pers-marks-hover.png" alt="">
+                           </div>
+                           <p>ОЦЕНКИ</p>
+                        </div>
+                    </a>
                 </div>
-            </a>     
-            <a href="personal-cabinet-saved.html">     
-               <div class="personal-menu-nav">
-                   <img src="img/pers-save.png" alt="">
-                   <div class="personal-menu-nav-hover animated zoomIn">
-                       <img src="img/pers-save-hover.png" alt="">
-                   </div>
-                   <p>СОХРАНЕННЫЕ</p>
+                <div class="pers-men-nav">         
+                    <a href="personal-cabinet-saved.html">     
+                       <div class="personal-menu-nav">
+                           <img src="img/pers-save.png" alt="">
+                           <div class="personal-menu-nav-hover animated zoomIn">
+                               <img src="img/pers-save-hover.png" alt="">
+                           </div>
+                           <p>СОХРАНЕННЫЕ</p>
+                        </div>
+                    </a>    
                 </div>
-            </a>    
-                
             </div>
             
         </section>
@@ -274,20 +287,19 @@
                 
                 <div class="private-settings-options">
                    
-                    <div class="private-settings-option">ПОКАЗЫВАТЬ КОММЕНТАРИИ С РЕЙТИНГОМ ВЫШЕ -4</div>
+                    <div class="private-settings-option">ПОКАЗЫВАТЬ КОММЕНТАРИИ С РЕЙТИНГОМ ВЫШЕ <output id="output-range-a">-4</output></div>
                     <div class="private-settings-toggle">
-                        <input type="range" min="0" max="1000" step="10" value="300" data-orientation="horizontal">
-                        
+                        <input type="range" min="-5" max="0" step="1" value="-4" data-orientation="horizontal" id="input-range-a">
                     </div>
                     
-                    <div class="private-settings-option">ПОКАЗЫВАТЬ ПОСТЫ С РЕЙТИНГОМ ВЫШЕ -15</div>
+                    <div class="private-settings-option">ПОКАЗЫВАТЬ ПОСТЫ С РЕЙТИНГОМ ВЫШЕ <output id="output-range-b">-15</output></div>
                     <div class="private-settings-toggle">
-                        <input type="range" min="0" max="1000" step="10" value="0" data-orientation="horizontal">
+                        <input type="range" min="-15" max="15" step="5" value="-15" data-orientation="horizontal" id="input-range-b">
                     </div>
                     
-                    <div class="private-settings-option">КОЛИЧЕСТВО ПОСТОВ НА СТРАНИЦУ 20</div>
+                    <div class="private-settings-option">КОЛИЧЕСТВО ПОСТОВ НА СТРАНИЦУ <output id="output-range-c">20</output></div>
                     <div class="private-settings-toggle">
-                        <input type="range" min="0" max="1000" step="10" value="0" data-orientation="horizontal">
+                        <input type="range" min="20" max="80" step="20" value="20" data-orientation="horizontal" id="input-range-c">
                     </div>
                     
                     <div class="private-settings-option">РАСКРЫВАТЬ ПОСТЫ</div>
@@ -367,6 +379,7 @@
                 <div class="private-nav-part">  
                 <div class="private-nav-section">
                        <p>ВХОД ЧЕРЕЗ СОЦИАЛЬНЫЕ СЕТИ</p>
+                        <div class="pers-men-nav">
                         <div class="footer-nav-float private-margin">
                             <a href="">
                                 <div class="footer-nav-social">
@@ -376,9 +389,11 @@
                                     <img src="img/1instagram-hover.png" alt="">
                                 </div>
                                 
-                                <div class="footer-nav-text">instagramm</div>
+                                <div class="footer-nav-text">instagram</div>
                             </a>
                         </div>
+                        </div>
+                        <div class="pers-men-nav">
                         <div class="footer-nav-float private-margin">
                             <a href="">
                                 <div class="footer-nav-social">
@@ -391,6 +406,8 @@
                                 <div class="footer-nav-text">facebook</div>
                             </a>
                         </div>
+                        </div>
+                        <div class="pers-men-nav">
                         <div class="footer-nav-float private-margin">
                             <a href="">
                                 <div class="footer-nav-social">
@@ -403,6 +420,8 @@
                                 <div class="footer-nav-text">twitter</div>
                             </a>
                         </div>
+                        </div>
+                        <div class="pers-men-nav">
                         <div class="footer-nav-float private-margin">
                             <a href="">
                                 <div class="footer-nav-social">
@@ -414,6 +433,7 @@
                                 
                                 <div class="footer-nav-text">vkontakte</div>
                             </a>
+                        </div>
                         </div>
                 </div>
             </div>
@@ -531,24 +551,52 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="js/rangeslider.min.js"></script>
+    
+	<script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    
 <script>
     $(function() {
 
-      var $element = $('input[type=range]');
-      var $output = $('output');
+        var $elementA = $('#input-range-a');
+        var $outputA = $('#output-range-a');
+        var $elementB = $('#input-range-b');
+        var $outputB = $('#output-range-b');
+        var $elementC = $('#input-range-c');
+        var $outputC = $('#output-range-c');
 
-      // Initialize rangeslider.js
-      $element.rangeslider({
+    // Initialize rangeslider.js
+    $elementA.rangeslider({
+        polyfill: false
+      });
+    $elementB.rangeslider({
+        polyfill: false
+      });
+    $elementC.rangeslider({
         polyfill: false
       });
 
-      // Current value output
-      /*$output[0].innerHTML = $element[0].value;
-        $element.on('input', function() {
-        $output[0].innerHTML = this.value;*/
-      });
-
+    // Current value output
+    $outputA.innerHTML = $elementA[0].value;
+    $elementA.on('input', function() {
+    $outputA[0].innerHTML = this.value;
+    });
+    
+    $outputB.innerHTML = $elementB[0].value;
+    $elementB.on('input', function() {
+    $outputB[0].innerHTML = this.value;
+    });
+    
+    $outputC.innerHTML = $elementC[0].value;
+    $elementC.on('input', function() {
+    $outputC[0].innerHTML = this.value;
+    });
+    
+        
+});
 </script>
+   
+       <script src="js/base.js"></script>
     
 </body>
 </html>

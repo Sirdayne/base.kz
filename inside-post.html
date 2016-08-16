@@ -70,11 +70,11 @@
     </header>
     <div class="header-mob">
         <div class="header-mob-burger">
-            <div class="burger-lines">
+            <div class="burger-lines" id="burger">
                 <div class="burger-line-1"></div>
                 <div class="burger-line-2"></div>
                 <div class="burger-line-3"></div>
-                <div class="burger-menu">
+                <div class="burger-menu" id="burger-menu">
                     <a href=""><div class="burger-nav"><p>ГОРЯЧЕЕ</p></div></a>
                     <a href=""><div class="burger-nav"><p>ЛУЧШЕЕ</p></div></a>
                     <a href=""><div class="burger-nav"><p>СВЕЖЕЕ</p></div></a>
@@ -180,7 +180,7 @@
             
             
             <div class="post">
-                <!--<div class="post-start-magic"></div>-->
+                <div class="post-start-magic"></div>
                 <div class="post-rating">
                     <div class="rating-like">
                         <div class="rating-like-hover">
@@ -210,7 +210,7 @@
                         
                         <!-- Rounded switch -->
                         <label class="switch-checkbox">
-                          <input type="checkbox" checked />
+                          <input type="checkbox" class="input-switch" checked />
                           <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
                         </label>
                         
@@ -292,7 +292,7 @@
                         <a href=""><img src="img/post-title-save.png" alt=""></a>
                     </div>
                 </div>
-                <!--<div class="post-end-magic"></div>-->
+              <div class="post-end-magic"></div>
             </div>
             
         </section>
@@ -334,7 +334,10 @@
                     <div class="comment-send">
                         ответить
                     </div>
-                    <button id="button-spoiler"><p>+</p></button>
+                    <button id="button-spoiler">
+                        <p class="classPlus">+</p>
+                        <p class="classMinus">-</p>
+                    </button>
                     <div class="comment-spoiler">
                     <!-- COMMENTS INSIDE COMMENTS START -->
                             <div class="comment-main">  
@@ -514,10 +517,12 @@
     </footer>
 	
 	<script src="js/jquery.min.js"></script>
+	<script src="js/waypoints.js"></script>
 	<script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     
     <script src="js/base.js"></script>
+    <script src="js/basewaypoints.js"></script>
     
 
 </body>
