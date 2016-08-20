@@ -312,88 +312,194 @@
    
    
      <section id="comments">
-        <div class="comments">  
+        <div class="comments"> 
+            
             <div class="comment-main">     
-                <div class="comment">
-                    <div class="comment-row">  
-                        <div class="comment-rating">
-                            <span>45</span> 
-                            <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
-                            <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
-                        </div>
+            <div class="comment">
+                <div class="comment-row">  
+                    <div class="comment-rating">
+                        <span>45</span> 
+                        <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
+                        <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
+                    </div>
                     
-                        <div class="comment-nickname">JOHN DOE</div>
-                        <div class="comment-time">отправлено <span>4</span> часа назад</div>
-                    </div> 
-                    <div class="comment-text"> 
+                    <div class="comment-nickname">JOHN DOE</div>
+                    <div class="comment-time">отправлено <span>4</span> часа назад</div>
+                </div> 
+                <div class="comment-text"> 
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Dolores voluptas consectetur eum, possimus officia nulla vero 
                         maiores iste explicabo modi? Consequatur, molestias excepturi 
                         assumenda praesentium quia tenetur mollitia molestiae voluptatem.</p>
-                    </div>
-                    <div class="comment-send">
-                        ответить
-                    </div>
-                    <button id="button-spoiler">
-                        <p class="classPlus">+</p>
-                        <p class="classMinus">-</p>
-                    </button>
-                    <div class="comment-spoiler">
-                    <!-- COMMENTS INSIDE COMMENTS START -->
-                            <div class="comment-main">  
-                                
-                                <div class="comment">
-                                    <div class="comment-row">  
-                                        <div class="comment-rating">
-                                            <span>45</span> 
-                                            <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
-                                            <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
-                                        </div>   
-                                       
-                                        <div class="comment-nickname">JOHN DOE</div>
-                                        <div class="comment-time">отправлено <span>4</span> часа назад</div>
-                                    </div> 
-                                    <div class="comment-text"> 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                        Dolores voluptas consectetur eum, possimus officia nulla vero 
-                                        maiores iste explicabo modi? Consequatur, molestias excepturi 
-                                        assumenda praesentium quia tenetur mollitia molestiae voluptatem.</p>
-                                    </div>
-                                    <div class="comment-send">
-                                        ответить
-                                    </div>
-                                </div>
-                            </div> 
-                            
-                            <div class="comment-main">  
-                                
-                                <div class="comment">
-                                    <div class="comment-row">  
-                                        <div class="comment-rating">
-                                            <span>45</span> 
-                                            <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
-                                            <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
-                                        </div>   
-                                       
-                                        
-                                        <div class="comment-nickname">JOHN DOE</div>
-                                        <div class="comment-time">отправлено <span>4</span> часа назад</div>
-                                    </div> 
-                                    <div class="comment-text"> 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                        Dolores voluptas consectetur eum, possimus officia nulla vero 
-                                        maiores iste explicabo modi? Consequatur, molestias excepturi 
-                                        assumenda praesentium quia tenetur mollitia molestiae voluptatem.</p>
-                                    </div>
-                                    <div class="comment-send">
-                                        ответить
-                                    </div>
-                                </div>
-                            </div> 
-                    </div>
-                    <!-- COMMENTS INSIDE COMMENTS END -->
                 </div>
+                <div class="comment-send">
+                    <div class="comment-send-answer">ответить</div>
+                    <div class="comment-send-cancel">отмена</div>
+                    <div class="comment-send-main">
+                        <textarea placeholder="Написать комментарий"></textarea>
+                        <button class="comment-send-button comment-send-button-fill">отправить</button>
+                    </div>  
+                </div>
+                
+                <button class="button-spoiler">
+                    <p class="classPlus">+</p>
+                    <p class="classMinus">-</p>
+                </button>
+                <div class="comment-spoiler">
+                <!-- COMMENT - 1 -->
+                    <div class="comment-main">  
+                    <div class="comment">
+                        <div class="comment-row">  
+                            <div class="comment-rating">
+                                <span>45</span> 
+                                <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
+                                <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
+                            </div>   
+                            <div class="comment-nickname">JOHN DOE</div>
+                            <div class="comment-time">отправлено <span>4</span> часа назад</div>
+                        </div> 
+                        <div class="comment-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores voluptas consectetur eum, possimus officia nulla vero 
+                                maiores iste explicabo modi? Consequatur, molestias excepturi 
+                                assumenda praesentium quia tenetur mollitia molestiae voluptatem.</p>
+                        </div>
+                        <div class="comment-send">
+                            <div class="comment-send-answer">ответить</div>
+                            <div class="comment-send-cancel">отмена</div>
+                            <div class="comment-send-main">
+                                <textarea placeholder="Написать комментарий"></textarea>
+                                <button class="comment-send-button comment-send-button-fill">отправить</button>
+                            </div>  
+                        </div>
+                    </div>
+                    </div> 
+                <!-- COMMENT - 2 -->         
+                    <div class="comment-main">  
+                    <div class="comment">
+                        <div class="comment-row">  
+                        <div class="comment-rating">
+                                <span>45</span> 
+                                <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
+                                <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
+                        </div>   
+                        <div class="comment-nickname">JOHN DOE</div>
+                        <div class="comment-time">отправлено <span>4</span> часа назад</div>
+                        </div> 
+                        <div class="comment-text"> 
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                               Dolores voluptas consectetur eum, possimus officia nulla vero 
+                               maiores iste explicabo modi? Consequatur, molestias excepturi 
+                               assumenda praesentium quia tenetur mollitia molestiae voluptatem.</p>
+                        </div>
+                        <div class="comment-send">
+                            <div class="comment-send-answer">ответить</div>
+                            <div class="comment-send-cancel">отмена</div>
+                            <div class="comment-send-main">
+                                <textarea placeholder="Написать комментарий"></textarea>
+                                <button class="comment-send-button comment-send-button-fill">отправить</button>
+                            </div>  
+                        </div>
+                        
+                        
+                        <button class="button-spoiler">
+                    <p class="classPlus">+</p>
+                    <p class="classMinus">-</p>
+                </button>
+                <div class="comment-spoiler">
+                <!-- COMMENT - 1 -->
+                    <div class="comment-main">  
+                    <div class="comment">
+                        <div class="comment-row">  
+                            <div class="comment-rating">
+                                <span>45</span> 
+                                <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
+                                <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
+                            </div>   
+                            <div class="comment-nickname">JOHN DOE</div>
+                            <div class="comment-time">отправлено <span>4</span> часа назад</div>
+                        </div> 
+                        <div class="comment-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores voluptas consectetur eum, possimus officia nulla vero 
+                                maiores iste explicabo modi? Consequatur, molestias excepturi 
+                                assumenda praesentium quia tenetur mollitia molestiae voluptatem.</p>
+                        </div>
+                        <div class="comment-send">
+                            <div class="comment-send-answer">ответить</div>
+                            <div class="comment-send-cancel">отмена</div>
+                            <div class="comment-send-main">
+                                <textarea placeholder="Написать комментарий"></textarea>
+                                <button class="comment-send-button comment-send-button-fill">отправить</button>
+                            </div>  
+                        </div>
+                    </div>
+                    </div> 
+                <!-- COMMENT - 2 -->         
+                    <div class="comment-main">  
+                    <div class="comment">
+                        <div class="comment-row">  
+                        <div class="comment-rating">
+                                <span>45</span> 
+                                <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
+                                <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
+                        </div>   
+                        <div class="comment-nickname">JOHN DOE</div>
+                        <div class="comment-time">отправлено <span>4</span> часа назад</div>
+                        </div> 
+                        <div class="comment-text"> 
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                               Dolores voluptas consectetur eum, possimus officia nulla vero 
+                               maiores iste explicabo modi? Consequatur, molestias excepturi 
+                               assumenda praesentium quia tenetur mollitia molestiae voluptatem.</p>
+                        </div>
+                        <div class="comment-send">
+                            <div class="comment-send-answer">ответить</div>
+                            <div class="comment-send-cancel">отмена</div>
+                            <div class="comment-send-main">
+                                <textarea placeholder="Написать комментарий"></textarea>
+                                <button class="comment-send-button comment-send-button-fill">отправить</button>
+                            </div>  
+                        </div>
+                    </div>
+                    </div> 
+                    
+                    <!-- COMMENT - 3 -->         
+                    <div class="comment-main">  
+                    <div class="comment">
+                        <div class="comment-row">  
+                        <div class="comment-rating">
+                                <span>45</span> 
+                                <div class="comment-rating-like"><img src="img/rating-like.png" alt=""></div> 
+                                <div class="comment-rating-dislike"><img src="img/rating-dislike.png" alt=""></div> 
+                        </div>   
+                        <div class="comment-nickname">JOHN DOE</div>
+                        <div class="comment-time">отправлено <span>4</span> часа назад</div>
+                        </div> 
+                        <div class="comment-text"> 
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                               Dolores voluptas consectetur eum, possimus officia nulla vero 
+                               maiores iste explicabo modi? Consequatur, molestias excepturi 
+                               assumenda praesentium quia tenetur mollitia molestiae voluptatem.</p>
+                        </div>
+                        <div class="comment-send">
+                            <div class="comment-send-answer">ответить</div>
+                            <div class="comment-send-cancel">отмена</div>
+                            <div class="comment-send-main">
+                                <textarea placeholder="Написать комментарий"></textarea>
+                                <button class="comment-send-button comment-send-button-fill">отправить</button>
+                            </div>  
+                        </div>
+                    </div>
+                    </div> 
+                </div>
+                        
+                        
+                    </div>
+                    </div> 
+                </div>
+                <!-- COMMENTS INSIDE COMMENT END -->
+            </div>
             </div> 
+            
         </div> 
     </section>
     
@@ -472,7 +578,7 @@
                                 <div class="footer-nav-social">
                                     <img src="img/1instagram.png" alt="">
                                 </div>
-                                <div class="footer-nav-social-hover animated zoomIn">
+                                <div class="footer-nav-social-hover animated rubberBand">
                                     <img src="img/1instagram-hover.png" alt="">
                                 </div>
                             </a>
@@ -482,7 +588,7 @@
                                 <div class="footer-nav-social">
                                     <img src="img/1facebook.png" alt="">
                                 </div>
-                                <div class="footer-nav-social-hover animated zoomIn">
+                                <div class="footer-nav-social-hover animated rubberBand">
                                     <img src="img/1facebook-hover.png" alt="">
                                 </div>
                             </a>
@@ -492,7 +598,7 @@
                                 <div class="footer-nav-social">
                                     <img src="img/1twitter.png" alt="">
                                 </div>
-                                <div class="footer-nav-social-hover animated zoomIn">
+                                <div class="footer-nav-social-hover animated rubberBand">
                                     <img src="img/1twitter-hover.png" alt="">
                                 </div>
                             </a>
@@ -502,7 +608,7 @@
                                 <div class="footer-nav-social">
                                     <img src="img/1vkontakte.png" alt="">
                                 </div>
-                                <div class="footer-nav-social-hover animated zoomIn">
+                                <div class="footer-nav-social-hover animated rubberBand">
                                     <img src="img/1vkontakte-hover.png" alt="">
                                 </div>
                             </a>

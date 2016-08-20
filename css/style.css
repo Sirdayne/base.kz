@@ -723,7 +723,6 @@ header a, #settings a{
 .wrapper-add-social{
     position: absolute;
     top: 200px;
-    
     width: 50px;
     height: 200px;
     background: #ebebeb;
@@ -734,6 +733,7 @@ header a, #settings a{
     width: 50px;
     height: 50px;
     background: #ebebeb;
+    z-index: 3;
 }
 .wrapper-add-social-inside:hover >img{
     display: none;
@@ -1195,6 +1195,58 @@ input:checked + .slider-checkbox:before {
     float: left;
     width: 100%;
 }
+.comment-send textarea{
+    float: left;
+    color: #766f6f;
+    height: 100px;
+    width: 50%;
+    min-width: 200px;
+    font-size: 14px;
+    outline: none;
+    margin-right: 50%;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+.comment-send-answer{
+    float: left;
+}
+.comment-send-cancel, .comment-send-main{
+    float: left;
+    width: 70%;
+    display: none;
+}
+.comment-send-active .comment-send-cancel, .comment-send-active .comment-send-main{
+    display: block;
+}
+.comment-send-active .comment-send-answer{
+    display: none;
+}
+.comment-send-button{
+    float: left;
+    border-bottom: 2px solid #c2c2c2;
+}
+.comment-send-button{
+    width: 100px;
+    margin-top: 25px;
+    color: #f2b44a;
+    border: 2px solid #f2b44a;
+    border-radius: 25px;
+    text-align: center;
+    height: 35px;
+    cursor: pointer;
+}
+.comment-send-button-fill{
+    background: -webkit-linear-gradient(bottom, #fff 50%, #f2b44a 50%);
+    background: -o-linear-gradient(bottom, #fff 50%, #f2b44a 50%);
+    background: linear-gradient(to top, #fff 50%, #f2b44a 50%);
+    background-size: 100% 200%;
+    background-position:bottom;
+    margin-left:10px;
+    transition:all .3s ease-in;
+}
+.comment-send-button-fill:hover {
+    background-position:top;
+    color: #fff;
+}
 .comment-nickname{
     float: left;
     color: #2b2a2a;
@@ -1219,7 +1271,7 @@ input:checked + .slider-checkbox:before {
     width: 100%;
     border-left: 2px solid #c2c2c2;
 }
-#button-spoiler{
+.button-spoiler{
     float: left;
     width: 20px;
     height: 20px;
@@ -1230,7 +1282,7 @@ input:checked + .slider-checkbox:before {
     border: 1px solid #c2c2c2; 
     margin-left: -9px;
 }
-#button-spoiler:hover{
+.button-spoiler:hover{
     background: #c2c2c2;
     color: #fff; 
 }
@@ -2147,6 +2199,14 @@ footer a{
 .footer-nav-float:hover  .footer-nav-social {
     display: none;
 }
+/*
+.footer-nav-float:not(:hover) .footer-nav-social-hover {
+    transition: 0.5s linear;
+}
+.footer-nav-float:not(:hover) .footer-nav-social {
+    transition: 0.5s linear;
+}
+*/
 .private-margin{
     margin-bottom: 15px;
 }
@@ -2198,3 +2258,10 @@ footer a{
 .foot-mob-img a{
     color: #f2b44a;
 }
+.color-orange:before{
+    color: #f2b44a;
+}
+.color-white:before{
+    color: #fff;
+}
+

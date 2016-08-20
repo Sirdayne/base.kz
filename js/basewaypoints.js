@@ -28,8 +28,17 @@
 
     /* SPOILER IN INSIDE POST COMMENTARIES */
     
-    $('#button-spoiler').click(function() {
-        $('.comment-spoiler').slideToggle("fast");
+    $('.comment-send-answer').click(function() {
+        $(this).parent('.comment-send').addClass('comment-send-active');
+    });
+    $('.comment-send-cancel').click(function() {
+        $(this).parent('.comment-send').removeClass('comment-send-active');
+    });
+
+
+    $('.button-spoiler').click(function() {
+        
+        $(this).parent('.comment').children('.comment-spoiler').slideToggle("fast");
         
         $(this).children('.classPlus').fadeToggle('fast');
         $(this).children('.classMinus').fadeToggle('fast');
