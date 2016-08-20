@@ -839,7 +839,7 @@ header a, #settings a{
 }
 .rating-checkbox-magic{
     position: fixed;
-    top: 100px;
+    top: 20px;
 }
 .rating-checkbox-main{
     position: absolute !important;

@@ -1,29 +1,43 @@
-    
     /* SPOILERS IN MAIN PAGE */
     
+    var ratingCheckbox = $('.rating-checkbox');
+    var post = $('.post');
+    var counter = -1;
+
     $('.input-switch').click(function() {
-        $(this).parents('.post').children('.post-content').slideToggle("fast");
-        $(this).parents('.post').children('.post-rating').children('.rating-checkbox').toggleClass('rating-checkbox-main');
+        $(this).parents('.post').children('.post-content').slideToggle("fast", Waypoint.refreshAll);
+        if (counter > 0) {
+        post[counter].scrollIntoView();
+        }
+        else{
+        document.getElementById('settings').scrollIntoView();  
+        }
     });
 
-    /* WAYPOINTS FOR HIDING CHECKBOX */
-    
-    $('.post-start-magic').waypoint( function(dir) {
-        if ( dir === 'down')
-            $(this).parents('.post').children('.post-rating').children('.rating-checkbox').addClass('rating-checkbox-magic');
-        else
-            $(this).parents('.post').children('.post-rating').children('.rating-checkbox').removeClass('rating-checkbox-magic');
-    }, {
-        offset: '0%'
+    $('.post-start-magic').waypoint({
+        handler: function(direction) {
+            if (direction === 'down') {
+                counter++;
+                ratingCheckbox[counter].className = "rating-checkbox rating-checkbox-magic";
+            } 
+            else {
+                ratingCheckbox[counter].className = "rating-checkbox";
+                counter--;
+            }
+        },
+        offset: -50
     });
-           
-    $('.post-end-magic').waypoint( function(dir) {
-        if ( dir === 'down')
-            $(this).parents('.post').children('.post-rating').children('.rating-checkbox').removeClass('rating-checkbox-magic');
-        else
-            $(this).parents('.post').children('.post-rating').children('.rating-checkbox').addClass('rating-checkbox-magic');
-    }, {
-        offset: '20%'
+
+    $('.post-end-magic').waypoint({
+        handler: function(direction) {
+            if (direction === 'down') {
+                ratingCheckbox[counter].className = "rating-checkbox";
+            } 
+            else {
+                ratingCheckbox[counter].className = "rating-checkbox rating-checkbox-magic";
+            }
+        },
+        offset: 50
     });
 
     /* SPOILER IN INSIDE POST COMMENTARIES */
