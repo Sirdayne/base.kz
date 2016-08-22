@@ -114,10 +114,7 @@
                 </div>
             </a>
             <div class="settings-free-personal-cabinet"></div>
-            <div class="settings-nav"><a href="personal-cabinet.html">настройки</a></div><!-- nav-active -->
-            <div class="settings-nav"><a href="personal-cabinet-ignore-list.html">игнор-лист</a></div>
-            <div class="settings-nav"><a href="personal-cabinet-notes.html">заметки</a></div>
-            <div class="settings-nav"><a href="personal-cabinet-saved.html">сохраненное</a></div>
+            <div class="settings-nav nav-active"><a href="personal-cabinet.html">добавить пост</a></div><!---->
            <!--
             <div class="settings-nav-search"></div>
             -->
@@ -125,160 +122,64 @@
     </section>
     
     
-    <div class="wrapper-personal">
+    <div class="wrapper">
        
         <section class="wrapper-add">
-            <a href="personal-cabinet-add-post.html" class="a-add-post">
-            <div class="add-post">
-                <div class="animated-line-1"></div>
-                <div class="animated-line-2"></div>
-                <div class="animated-line-3"></div>
-                <div class="animated-line-4"></div>
-                <div class="animated-line-5"></div>
+            <div class="wrapper-add-content">
+                <a href="">
+                    <div class="wrapper-add-content-inside">  
+                        <img src="img/add-post-text.png" alt="">
+                        <div class="wrapper-add-content-inside-hover animated fadeInUp">
+                            <span>добавить текст</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="wrapper-add-content-inside">
+                        <img src="img/add-post-photo.png" alt="">
+                        <div class="wrapper-add-content-inside-hover animated fadeInUp">
+                            <span>добавить фото</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="wrapper-add-content-inside">
+                        <img src="img/add-post-video.png" alt="">
+                        <div class="wrapper-add-content-inside-hover animated fadeInUp">
+                            <span>добавить видео</span>
+                        </div>
+                    </div>
+                </a>
             </div>
-            </a>
-            <div class="add-post-text animated fadeInDown"><p>добавить пост</p></div>
-            <div class="wrapper-grey"></div>
         </section>
         
-        <section id="personal-cabinet">
-            <div class="personal-photo">
-                <div class="personal-photo-avatar">
-                    <img src="img/personal-photo.png" alt="avatar">
-                    <div class="personal-change-photo">
-                        <img src="img/personal-photo-change.png" alt="Поменять аватар">
+        <section id="private-add-post">
+                <div class="private-add-post-line"></div>
+                <div class="private-add-post">
+                    <input type="text" placeholder="Заголовок...">
+                    <input type="text" placeholder="Текст...">
+                    <!--<textarea placeholder="Текст..."></textarea>-->
+                    <input type="text" placeholder="от 2-х до 8-ми тегов через запятую">
+                </div>    
+                
+                <div class="private-add-post-option">Пост содержит материалы 16+</div>
+                    <div class="private-add-post-toggle">
+                        <label class="switch-checkbox">
+                          <input type="checkbox" />
+                          <div class="slider-checkbox round"><img src="img/checkbox-x.png" alt=""></div>
+                        </label>
                     </div>
-                    <div class="personal-change-photo-text animated fadeInDown">
-                            изменить
-                    </div>
-                </div>
-                <div class="personal-nickname">JOHN DOE</div>
-                <div class="personal-rating"><span>1334</span><br>рейтинг</div>
-                <div class="personal-border-line"></div>
-                <div class="personal-subs"><span>1856</span><br>подписчиков</div>
-            </div>
-            
-            <div class="personal-info">
-                <div class="personal-50">
-                    <div class="personal-info-option">пикабушник уже <span>2</span> дня</div>
-                    <div class="personal-info-option">рейтинг: <span>0</span></div>
-                    <div class="personal-info-option">комментариев: <span>0</span></div>
-                    <div class="personal-info-option">добавил постов: <span>0</span></div>
-                    <div class="personal-info-option">из них в "горячем": <span>0</span></div>
+                
+                <div class="private-add-post-buttons">
+                    <button class="private-add-post-button comment-send-button-fill">Опубликовать</button>
+                    <div class="private-add-post-pre">предпросмотр</div>
                 </div>
                 
-                <div class="personal-50">
-                    <div class="personal-info-option">поставил: <span>1</span> плюс</div>
-                    <div class="personal-info-option personal-margin-left"><p><span>0</span> минусов</p></div>
+                <div class="private-add-post-buttons-2">
+                    <button class="private-add-post-grey comment-add-button-fill">Сохранить черновик</button>
                 </div>
-            </div>
-            
-            <div class="extra-main">
-                <p>НАСТРОЙКИ <img src="img/extra-nav.png" alt=""></p>
-                <div class="extra-navigation">
-                    <a href="personal-cabinet-ignore-list.html"><div class="extra-nav">ИГНОР-ЛИСТ</div></a>
-                    <a href="personal-cabinet-notes.html"><div class="extra-nav">ЗАМЕТКИ</div></a>
-                    <a href="personal-cabinet-saved.html"><div class="extra-nav">СОХРАНЕННОЕ</div></a>
-                </div>
-            </div>
-            
-            <div class="personal-line"></div>
-            
-            <div class="personal-menu">
-                <div class="pers-men-nav">
-                    <a href="personal-cabinet.html">
-                       <div class="personal-menu-nav">
-                          <img src="img/pers-settings.png" alt="">
-                           <div class="personal-menu-nav-hover animated rubberBand">
-                               <img src="img/pers-settings-hover.png" alt="">
-                           </div>
-                           <p>НАСТРОЙКИ</p>
-                        </div>
-                    </a>  
-                </div>
-                <div class="pers-men-nav">
-                    <a href="">    
-                        <div class="personal-menu-nav">
-                           <img src="img/pers-lenta.png" alt="">
-                           <div class="personal-menu-nav-hover animated rubberBand">
-                               <img src="img/pers-lenta-hover.png" alt="">
-                           </div>
-                           <p>ЛЕНТА</p>
-                        </div>
-                    </a>   
-                </div>
-                <div class="pers-men-nav">
-                    <a href="personal-cabinet-post.html">   
-                        <div class="personal-menu-nav">
-                           <img src="img/pers-posts.png" alt="">
-                           <div class="personal-menu-nav-hover animated rubberBand">
-                               <img src="img/pers-posts-hover.png" alt="">
-                           </div>
-                           <p>ПОСТЫ</p>
-                        </div>
-                    </a> 
-                </div>
-                <div class="pers-men-nav">   
-                    <a href="personal-cabinet-messages.html">    
-                        <div class="personal-menu-nav">
-                           <img src="img/pers-messages.png" alt="">
-                           <div class="personal-menu-nav-hover animated rubberBand">
-                               <img src="img/pers-messages-hover.png" alt="">
-                           </div>
-                           <p>СООБЩЕНИЯ</p>
-                        </div>
-                    </a>    
-                </div>
-                <div class="pers-men-nav">
-                    <a href="personal-cabinet-comments.html">    
-                        <div class="personal-menu-nav">
-                           <img src="img/pers-comments.png" alt="">
-                           <div class="personal-menu-nav-hover animated rubberBand">
-                               <img src="img/pers-comments-hover.png" alt="">
-                           </div>
-                           <p>КОММЕНТАРИИ</p>
-                        </div>
-                    </a>   
-                </div>
-                <div class="pers-men-nav">
-                    <a href="">    
-                        <div class="personal-menu-nav">
-                           <img src="img/pers-marks.png" alt="">
-                           <div class="personal-menu-nav-hover animated rubberBand">
-                               <img src="img/pers-marks-hover.png" alt="">
-                           </div>
-                           <p>ОЦЕНКИ</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="pers-men-nav">         
-                    <a href="personal-cabinet-saved.html">     
-                       <div class="personal-menu-nav">
-                           <img src="img/pers-save.png" alt="">
-                           <div class="personal-menu-nav-hover animated rubberBand">
-                               <img src="img/pers-save-hover.png" alt="">
-                           </div>
-                           <p>СОХРАНЕННЫЕ</p>
-                        </div>
-                    </a>    
-                </div>
-            </div>
-            
         </section>
-        
-        <section id="personal-cabinet-settings">
-            
-            <section id="private-add-post">
-                <div class="private-add-post">
-                    <input type="text" placeholder="Заголовок">
-                    <textarea placeholder="Введите текст"></textarea>
-                    <input type="text" placeholder="Теги, через запятую">
-                </div>    
-                <button class="private-add-post-button button-fill">Добавить пост</button>
-                <button class="private-add-post-button button-fill">Сохранить черновик</button>
-            </section>
-            
-        </section>
+
         
     </div>
     
@@ -324,40 +225,40 @@
                         <div class="footer-nav-section">
                         <div class="footer-nav-float">
                             <a href="">
-                                <div class="footer-nav-social">
+                                <div class="footer-nav-content">
                                     <img src="img/1instagram.png" alt="">
                                 </div>
-                                <div class="footer-nav-social-hover animated rubberBand">
+                                <div class="footer-nav-content-hover animated rubberBand">
                                     <img src="img/1instagram-hover.png" alt="">
                                 </div>
                             </a>
                         </div>
                         <div class="footer-nav-float">
                             <a href="">
-                                <div class="footer-nav-social">
+                                <div class="footer-nav-content">
                                     <img src="img/1facebook.png" alt="">
                                 </div>
-                                <div class="footer-nav-social-hover animated rubberBand">
+                                <div class="footer-nav-content-hover animated rubberBand">
                                     <img src="img/1facebook-hover.png" alt="">
                                 </div>
                             </a>
                         </div>
                         <div class="footer-nav-float">
                             <a href="">
-                                <div class="footer-nav-social">
+                                <div class="footer-nav-content">
                                     <img src="img/1twitter.png" alt="">
                                 </div>
-                                <div class="footer-nav-social-hover animated rubberBand">
+                                <div class="footer-nav-content-hover animated rubberBand">
                                     <img src="img/1twitter-hover.png" alt="">
                                 </div>
                             </a>
                         </div>
                         <div class="footer-nav-float">
                             <a href="">
-                                <div class="footer-nav-social">
+                                <div class="footer-nav-content">
                                     <img src="img/1vkontakte.png" alt="">
                                 </div>
-                                <div class="footer-nav-social-hover animated rubberBand">
+                                <div class="footer-nav-content-hover animated rubberBand">
                                     <img src="img/1vkontakte-hover.png" alt="">
                                 </div>
                             </a>
