@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Base - личный кабинет - комментарии</title>
+	<title>Base - личный кабинет</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,8 +18,10 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="css/animate.css">
-
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    
+    
 </head>
 
 <body>
@@ -108,12 +110,14 @@
                 <div class="settings-nav-arrow">
                     <div class="settings-nav-arrow-line-1"></div>
                     <div class="settings-nav-arrow-line-2"></div>
-                    
+                    <!--<div class="settings-nav-arrow-line-3"></div>-->
                 </div>
             </a>
             <div class="settings-free-personal-cabinet"></div>
-            <div class="settings-nav"><a href="">по времени</a></div>
-            <div class="settings-nav"><a href="">по рейтингу</a></div>
+            <div class="settings-nav"><a href="personal-cabinet.html">настройки</a></div><!-- nav-active -->
+            <div class="settings-nav"><a href="personal-cabinet-ignore-list.html">игнор-лист</a></div>
+            <div class="settings-nav"><a href="personal-cabinet-notes.html">заметки</a></div>
+            <div class="settings-nav"><a href="personal-cabinet-saved.html">сохраненное</a></div>
            <!--
             <div class="settings-nav-search"></div>
             -->
@@ -169,10 +173,12 @@
                 </div>
             </div>
             
-             <div class="extra-main">
-                <p>ПО ВРЕМЕНИ <img src="img/extra-nav.png" alt=""></p>
+            <div class="extra-main">
+                <p>НАСТРОЙКИ <img src="img/extra-nav.png" alt=""></p>
                 <div class="extra-navigation">
-                    <a href=""><div class="extra-nav">ПО РЕЙТИНГУ</div></a>
+                    <a href="personal-cabinet-ignore-list.html"><div class="extra-nav">ИГНОР-ЛИСТ</div></a>
+                    <a href="personal-cabinet-notes.html"><div class="extra-nav">ЗАМЕТКИ</div></a>
+                    <a href="personal-cabinet-saved.html"><div class="extra-nav">СОХРАНЕННОЕ</div></a>
                 </div>
             </div>
             
@@ -262,14 +268,14 @@
         
         <section id="personal-cabinet-settings">
             
-            <section id="private-comments">
-                
-                <div class="private-comments">
-                    <input type="text" placeholder="ТЕКСТ КОММЕНТАРИЯ">
-                    
-                    <button class="private-comments-search button-fill"><p>найти</p></button>
-                </div>
-                
+            <section id="private-add-post">
+                <div class="private-add-post">
+                    <input type="text" placeholder="Заголовок">
+                    <textarea placeholder="Введите текст"></textarea>
+                    <input type="text" placeholder="Теги, через запятую">
+                </div>    
+                <button class="private-add-post-button button-fill">Добавить пост</button>
+                <button class="private-add-post-button button-fill">Сохранить черновик</button>
             </section>
             
         </section>
@@ -366,9 +372,12 @@
     </footer>
     
     <script src="js/jquery.min.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    
 	<script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     
     <script src="js/base.js"></script>
+    
 </body>
 </html>

@@ -217,6 +217,18 @@
     .footer-mob{
         display: block;
     }
+    .private-add-post{
+        text-align: center;
+    }
+    .private-add-post input, .private-add-post textarea, .private-add-post-button{
+        float: none;
+        display: block;
+        margin: 35px auto;
+    }
+    .private-add-post-button{
+        margin: 15px auto;
+    }
+    
 }
 @media only screen and (max-width : 650px) {
     .private-saved-70{

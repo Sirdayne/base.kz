@@ -683,23 +683,23 @@ header a, #settings a{
     transform: rotate(-45deg);
 }
 
-.add-post:hover .animated-line-1{
+.a-add-post:hover .animated-line-1{
     top: 25px;
     left: 75px;
 }
-.add-post:hover .animated-line-2{
+.a-add-post:hover .animated-line-2{
     top: -50px;
     left: 24px;
 }
-.add-post:hover .animated-line-3{
+.a-add-post:hover .animated-line-3{
     top: 25px;
     left: 13px;
 }
-.add-post:hover .animated-line-4{
+.a-add-post:hover .animated-line-4{
     top: 24px;
     left: 32px;
 }
-.add-post:hover .animated-line-5{
+.a-add-post:hover .animated-line-5{
     top: 15px;
     left: 32px;
 }
@@ -717,7 +717,7 @@ header a, #settings a{
     margin-top: 12px;
     margin-left: 10px;
 }
-.add-post:hover + .add-post-text{
+.a-add-post:hover + .add-post-text{
     display: block;
 }
 .wrapper-add-social{
@@ -793,7 +793,6 @@ header a, #settings a{
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    background: #fff;
     cursor: pointer;
 }
 .rating-like-hover, .rating-dislike-hover{
@@ -1922,6 +1921,56 @@ input:checked + .slider-checkbox:before {
 .personal-info-option{
     float: left;
     width: 100%;
+}
+
+
+#private-add-post{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+.private-add-post{
+    float: left;
+    width: 100%;
+}
+.private-add-post input{
+    float: left;
+    color: #766f6f;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-right: 10%;
+    margin-top: 15px;
+    font-family: "Arial", Helvetica, sans-serif;
+    border-bottom: 2px solid #c2c2c2;
+    background: #ebebeb;
+    width: 40%;
+}
+.private-add-post textarea{
+    float: left;
+    color: #766f6f;
+    height: 300px;
+    width: 80%;
+    background: #ebebeb;
+    min-width: 200px;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    margin-right: 30%;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+.private-add-post-button{
+    float: left;
+    margin-top: 55px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    border: 2px solid #2b2a2a;
+    cursor: pointer;
+    color: #2b2a2a;
+    margin-bottom: 55px;
 }
 
 .extra-main{
