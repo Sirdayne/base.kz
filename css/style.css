@@ -1955,6 +1955,7 @@ input:checked + .slider-checkbox:before {
 }
 #private-add-post{
     float: left;
+    position: relative;
     width: 60%;
     margin-left: 20%;
     margin-top: 25px;
@@ -1963,11 +1964,9 @@ input:checked + .slider-checkbox:before {
     float: left;
     width: 100%;
     margin-top: 55px;
-    position: relative;
 }
 .private-add-post input{
     float: left;
-    color: #c2c2c2;
     font-size: 18px;
     outline: none;
     border: none;
@@ -1978,17 +1977,28 @@ input:checked + .slider-checkbox:before {
     background: #fff;
     width: 50%;
 }
+.private-add-post input[type="text"]{
+    color: #766f6f;
+}
+.private-add-post input[type="text"]:focus {
+  color: #2b2a2a;
+  border-bottom: 2px solid #2b2a2a;
+}
 .private-add-post-line{
     position: absolute;
-    width: 5px;
-    height: 10px;
+    width: 8px;
+    height: 40px;
     background: #f2b44a;
-    top: 0;
-    left: -15px;
+    top: 45px;
+    left: -25px;
 }
 .private-add-post input:nth-child(3){
     border: 1px solid #c2c2c2;
     padding: 25px;
+}
+.private-add-post input[type="text"]:nth-child(3):focus {
+  color: #2b2a2a;
+  border: 2px solid #2b2a2a;
 }
 .private-add-post-tags{
     border: 1px solid #c2c2c2;
@@ -2013,13 +2023,14 @@ input:checked + .slider-checkbox:before {
 }
 .private-add-post-buttons, .private-add-post-buttons-2 {
     float: left;
-    width: 100%;
+    width: 50%;
 }
 .private-add-post-buttons{
     margin-top: 125px;
+    margin-bottom: 125px;
 }
 .private-add-post-buttons-2{
-    margin-top: 25px;
+    margin-top: 125px;
     margin-bottom: 125px;
 }
 .private-add-post-button{
@@ -2033,6 +2044,7 @@ input:checked + .slider-checkbox:before {
 }
 .private-add-post-grey{
     float: left;
+    margin-top: 25px;
     padding: 10px 25px 10px 25px;
     width: 200px;
     border-radius: 25px;
