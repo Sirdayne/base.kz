@@ -1,3 +1,11 @@
+@media only screen and (max-width : 2000px) {
+    .reg-form{
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 400px;
+    }
+}
 @media only screen and (max-width : 1350px) {
     .footer-nav-part{
         margin-right: 40px;
@@ -45,6 +53,13 @@
     }
     .settings-free-personal-cabinet{
         width: 100px;
+    }
+}
+
+@media only screen and (max-width : 950px){
+    .reg-form{
+        width: 90%;
+        left: 5%;
     }
 }
 @media only screen and (max-width : 900px) {
@@ -222,6 +237,11 @@
     }
     .your-comment-row textarea{
         width: 90%;
+        max-width: 90%;
+    }
+    .comment-send textarea{
+        width: 70%;
+        max-width: 70%;
     }
     .personal-menu{
         display: none;
@@ -315,6 +335,15 @@
         margin-top: 25px;
     }
 } 
+
+@media only screen and (max-width : 500px){      
+    .reg-form-option{
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+}  
+
 @media only screen and (max-width : 450px){      
     .settings-nav{
         width: 100%;
