@@ -113,7 +113,7 @@ header a, #settings a{
 .header-nav-popup{
     position: absolute;
     float: left;
-    bottom: -280px;
+    bottom: -320px;
     right: 0;
     width: 200px;
     background: #d7d7d7;
@@ -443,6 +443,9 @@ header a, #settings a{
     float: left;
     margin-top: 15px;
     margin-right: 40px;
+    cursor: pointer;
+    color: #766f6f;
+    
 }
 .settings-nav a:hover{
     color: #2b2a2a !important;
@@ -574,7 +577,7 @@ header a, #settings a{
 	-o-transform: rotate(0deg);
     transform: rotate(0deg);
 }
-.nav-active a, .nav-active a{
+.nav-active, .nav-active a, .nav-active a{
     color: #2b2a2a !important;
 }
 /* MAIN */
@@ -2510,6 +2513,40 @@ footer a{
     cursor: pointer;
     color: #f2b44a;
 }
-.reg-registration{
+.reg-registration, .reg-password{
     display: none;
+}
+
+#private-registration{
+    float: left;
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 150px;
+}
+.nav-active{
+    color: #2b2a2a;
+}
+.private-reg-row{
+    float: left;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+}
+.private-reg-row input{
+    font-size: 18px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    font-family: "Arial", Helvetica, sans-serif;
+    border-bottom: 2px solid #c2c2c2;
+    background: #fff;
+    width: 80%;
+}
+.private-reg-row input[type="text"]{
+    color: #766f6f;
+}
+.private-reg-row input[type="text"]:focus {
+  color: #2b2a2a;
+  border-bottom: 2px solid #2b2a2a;
 }

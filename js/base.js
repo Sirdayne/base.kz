@@ -61,4 +61,37 @@ $(document).ready(function(){
         $('#authorization').addClass('reg-active');
         
     });
+    
+    $('#set-registration').click(function() {
+        
+        $('#set-authorization').removeClass('nav-active');
+        $('#set-password').removeClass('nav-active');
+        $('.reg-password').hide();
+        $('.reg-authorization').hide();
+        $('.reg-registration').show();
+        $('#set-registration').addClass('nav-active');
+        
+    });
+    
+    $('#set-authorization').click(function() {
+        
+        $('#set-registration').removeClass('nav-active');
+        $('#set-password').removeClass('nav-active');
+        $('.reg-password').hide();
+        $('.reg-registration').hide();
+        $('.reg-authorization').show();
+        $('#set-authorization').addClass('nav-active');
+        
+    });
+    
+     $('#set-password').click(function() {
+        
+        $('#set-registration').removeClass('nav-active');
+        $('#set-authorization').removeClass('nav-active');
+        $('.reg-authorization').hide();
+        $('.reg-registration').hide();
+        $('.reg-password').show();
+        $('#set-password').addClass('nav-active');
+        
+    });
 });
