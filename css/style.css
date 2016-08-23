@@ -843,6 +843,12 @@ header a, #settings a{
 .rating-like:hover .rating-like-hide img, .rating-dislike:hover .rating-dislike-hide img{
     display: none;
 }
+.rated-post .rating-like-hover, .rated-post .rating-dislike-hover{
+    display: block;
+}
+.rated-post .rating-like-hide img, .rated-post .rating-dislike-hide img{
+    display: none;
+}
 .rating-number{
     width: 20px;
     margin-top: 40px;
