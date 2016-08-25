@@ -2507,6 +2507,7 @@ footer a{
 }
 .reg-form-button{
     padding: 10px 25px 10px 25px;
+    margin-top: 35px;
     width: 200px;
     border-radius: 25px;
     border: 2px solid #f2b44a;
@@ -2520,7 +2521,8 @@ footer a{
 #private-registration{
     float: left;
     width: 100%;
-    margin-top: 55px;
+    margin-top: 100px;
+    min-height: 600px;
     margin-bottom: 150px;
 }
 .nav-active{
